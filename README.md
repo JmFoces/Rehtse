@@ -10,8 +10,8 @@ br_netfilter+Iptables+NFQueue+BPF+Regex ---> Easy way to modify network packets 
 
 You will need:
 
-  apt-get install libboost-all-dev libnetfilter-queue1 libnetfilter-queue-dev libpcap0.8 libpcap0.8-dev
-  Follow instructions to install libcrafter. 
+    apt-get install libboost-all-dev libnetfilter-queue1 libnetfilter-queue-dev libpcap0.8 libpcap0.8-dev
+    Follow instructions to install libcrafter. 
   
 The project works now on Eclipse Neon. 
   
