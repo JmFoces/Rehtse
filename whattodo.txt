@@ -1,8 +1,0 @@
-What do I want to get from this?
-I want a program that:
-	1º Connects to a NFQueue
-	2º Decodes Packets and gives each of them sense into the communication flow.
-	3º Is able to identify patterns provided by user through a regex by:
-		packet,
-		flows,
-		in the whole communication.
