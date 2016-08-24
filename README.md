@@ -6,7 +6,7 @@ br_netfilter+Iptables+NFQueue+BPF+Regex ---> Easy way to modify network packets 
     https://github.com/pellegre/libcrafter
     https://github.com/ytakano/radix_tree
     
-  Both of these them maid things to work here.
+  Both of them maid things to work here.
 
 You will need:
 
