@@ -14,6 +14,7 @@ You will need:
     Follow instructions to install libcrafter. 
   
 To use it:
+
     1 cd Debug; make clean; make all;
     2 edit your config.json file. Take a look at Debug/config.json for an example.
     3 write your iptable rule to dispatch packets to Rehtse -> iptables -A FORWARD -j NFQUEUE --queue-num 0.
