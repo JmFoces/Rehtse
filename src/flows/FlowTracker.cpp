@@ -68,17 +68,17 @@ bool FlowTracker::handlePacket(Crafter::Packet *packet){
 }
 
 Flow* FlowTracker::getFlow(std::string key,std::string brother_key){
-	BOOST_LOG_TRIVIAL(trace) << "Getting flow with key " << hexa_print(key.c_str(),key.size());
+	BOOST_LOG_TRIVIAL(debug) << "Flow Tracker access with key " << hexa_print(key.c_str(),key.size());
 	radix_tree<std::string, Flow*>::iterator it;
 	it = peer_tree.find(key);
 	Flow* flow ;
 	std::string found_key;
 	if (peer_tree.end()!=it ){
-		BOOST_LOG_TRIVIAL(trace) << "Key found ";
+		BOOST_LOG_TRIVIAL(debug) << "Flow Tracked already ";
 		 found_key = it->first;
 		 flow= it->second;
 	}else{
-		BOOST_LOG_TRIVIAL(trace) << "non existent key ";
+		BOOST_LOG_TRIVIAL(debug) << "New Flow to track ";
 		std::pair<Flow*,Flow*>* flowptr_pair = Flow::makeFlowPair((uint8_t)key[8],key,brother_key);
 		peer_tree[key]=flowptr_pair->first;
 		peer_tree[brother_key]=flowptr_pair->second;
@@ -86,7 +86,7 @@ Flow* FlowTracker::getFlow(std::string key,std::string brother_key){
 		delete flowptr_pair;
 	}
 
-	BOOST_LOG_TRIVIAL(trace) << "Found your flow! ";
+
 	return flow;
 }
 

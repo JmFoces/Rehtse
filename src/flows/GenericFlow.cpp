@@ -32,25 +32,25 @@ GenericFlow::~GenericFlow() {
 }
 
 bool GenericFlow::handlePacket(Crafter::Packet *packet){
-	BOOST_LOG_TRIVIAL(trace) << "GenericFlow " << hexa_print(key.c_str(),key.size()) << " handling packet ";
+	BOOST_LOG_TRIVIAL(info) << "TCPFlow " << " handling packet ";
+	BOOST_LOG_TRIVIAL(debug) << "GenericFlow " << hexa_print(key.c_str(),key.size());
 	int32_t balance_cache = 0;
 	Scanner *scanner = Scanner::instance();
 	Pattern *pattern = scanner->check(packet);
 	if (pattern){
-		BOOST_LOG_TRIVIAL(debug) << "Packet matched filter " << pattern->print();
 		// Apply modifications here!
 		balance_cache += pattern->applyReplacement(packet->operator [](packet->GetLayerCount()-1));
 		modified=true;
-		BOOST_LOG_TRIVIAL(debug) << "Packet Updated ";
 	}else{
 		BOOST_LOG_TRIVIAL(trace) << "No match";
 	}
 
 	if (modified){
+		BOOST_LOG_TRIVIAL(info) << "GenericFlow " << "Updated Packet Content ";
 		return true;
 	}
 	else{
-		BOOST_LOG_TRIVIAL(trace) << "Touched anything";
+		BOOST_LOG_TRIVIAL(info) << "Touched anything";
 		return false;
 	}
 }
@@ -60,7 +60,7 @@ void GenericFlow::updateKey(std::string &key_s,std::string &key_d, Crafter::IP* 
 	 * Otherwise it will make weird things. For protocols like ICMP for example.
 	 * It generates good keys for TCP UDP and SCTP
 	 */
-	BOOST_LOG_TRIVIAL(trace) << "Updating with Generic Key";
+	BOOST_LOG_TRIVIAL(debug) << "Updating with Generic Key";
 	Crafter::Layer *ip_overlay = (Crafter::Layer*) packet->GetTopLayer();
 	uint8_t *raw_data_ptr = (uint8_t *) malloc(ip_overlay->GetSize());
 	ip_overlay->GetData(raw_data_ptr);
