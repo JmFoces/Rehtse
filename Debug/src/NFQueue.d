@@ -1,22 +1,18 @@
-src/NFQueue.o: ../src/NFQueue.cpp \
- /home/xshell/git/RehtSe/include/NFQueue.h \
- /home/xshell/git/RehtSe/include/misc.h \
- /home/xshell/git/RehtSe/include/flows/FlowTracker.h \
- /home/xshell/git/RehtSe/include/radix_tree.hpp \
- /home/xshell/git/RehtSe/include/radix_tree_it.hpp \
- /home/xshell/git/RehtSe/include/radix_tree_node.hpp \
- /home/xshell/git/RehtSe/include/flows/Flow.h
+src/NFQueue.o: ../src/NFQueue.cpp ../include/NFQueue.h ../include/misc.h \
+ ../include/flows/FlowTracker.h ../include/radix_tree.hpp \
+ ../include/radix_tree_it.hpp ../include/radix_tree_node.hpp \
+ ../include/flows/Flow.h
 
-/home/xshell/git/RehtSe/include/NFQueue.h:
+../include/NFQueue.h:
 
-/home/xshell/git/RehtSe/include/misc.h:
+../include/misc.h:
 
-/home/xshell/git/RehtSe/include/flows/FlowTracker.h:
+../include/flows/FlowTracker.h:
 
-/home/xshell/git/RehtSe/include/radix_tree.hpp:
+../include/radix_tree.hpp:
 
-/home/xshell/git/RehtSe/include/radix_tree_it.hpp:
+../include/radix_tree_it.hpp:
 
-/home/xshell/git/RehtSe/include/radix_tree_node.hpp:
+../include/radix_tree_node.hpp:
 
-/home/xshell/git/RehtSe/include/flows/Flow.h:
+../include/flows/Flow.h:

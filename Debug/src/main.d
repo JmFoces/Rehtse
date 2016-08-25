@@ -1,34 +1,28 @@
-src/main.o: ../src/main.cpp \
- /home/xshell/git/RehtSe/include/UserInterface.h \
- /home/xshell/git/RehtSe/include/radix_tree.hpp \
- /home/xshell/git/RehtSe/include/radix_tree_it.hpp \
- /home/xshell/git/RehtSe/include/radix_tree_node.hpp \
- /home/xshell/git/RehtSe/include/flows/FlowTracker.h \
- /home/xshell/git/RehtSe/include/flows/Flow.h \
- /home/xshell/git/RehtSe/include/misc.h \
- /home/xshell/git/RehtSe/include/NFQueue.h \
- /home/xshell/git/RehtSe/include/pattern/Scanner.h \
- /home/xshell/git/RehtSe/include/pattern/Pattern.h \
- /home/xshell/git/RehtSe/include/err.h
+src/main.o: ../src/main.cpp ../include/UserInterface.h \
+ ../include/radix_tree.hpp ../include/radix_tree_it.hpp \
+ ../include/radix_tree_node.hpp ../include/flows/FlowTracker.h \
+ ../include/flows/Flow.h ../include/misc.h ../include/NFQueue.h \
+ ../include/pattern/Scanner.h ../include/pattern/Pattern.h \
+ ../include/err.h
 
-/home/xshell/git/RehtSe/include/UserInterface.h:
+../include/UserInterface.h:
 
-/home/xshell/git/RehtSe/include/radix_tree.hpp:
+../include/radix_tree.hpp:
 
-/home/xshell/git/RehtSe/include/radix_tree_it.hpp:
+../include/radix_tree_it.hpp:
 
-/home/xshell/git/RehtSe/include/radix_tree_node.hpp:
+../include/radix_tree_node.hpp:
 
-/home/xshell/git/RehtSe/include/flows/FlowTracker.h:
+../include/flows/FlowTracker.h:
 
-/home/xshell/git/RehtSe/include/flows/Flow.h:
+../include/flows/Flow.h:
 
-/home/xshell/git/RehtSe/include/misc.h:
+../include/misc.h:
 
-/home/xshell/git/RehtSe/include/NFQueue.h:
+../include/NFQueue.h:
 
-/home/xshell/git/RehtSe/include/pattern/Scanner.h:
+../include/pattern/Scanner.h:
 
-/home/xshell/git/RehtSe/include/pattern/Pattern.h:
+../include/pattern/Pattern.h:
 
-/home/xshell/git/RehtSe/include/err.h:
+../include/err.h:

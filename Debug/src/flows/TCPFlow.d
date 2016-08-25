@@ -1,19 +1,15 @@
-src/flows/TCPFlow.o: ../src/flows/TCPFlow.cpp \
- /home/xshell/git/RehtSe/include/flows/TCPFlow.h \
- /home/xshell/git/RehtSe/include/flows/Flow.h \
- /home/xshell/git/RehtSe/include/misc.h \
- /home/xshell/git/RehtSe/include/pattern/Scanner.h \
- /home/xshell/git/RehtSe/include/pattern/Pattern.h \
- /home/xshell/git/RehtSe/include/err.h
+src/flows/TCPFlow.o: ../src/flows/TCPFlow.cpp ../include/flows/TCPFlow.h \
+ ../include/flows/Flow.h ../include/misc.h ../include/pattern/Scanner.h \
+ ../include/pattern/Pattern.h ../include/err.h
 
-/home/xshell/git/RehtSe/include/flows/TCPFlow.h:
+../include/flows/TCPFlow.h:
 
-/home/xshell/git/RehtSe/include/flows/Flow.h:
+../include/flows/Flow.h:
 
-/home/xshell/git/RehtSe/include/misc.h:
+../include/misc.h:
 
-/home/xshell/git/RehtSe/include/pattern/Scanner.h:
+../include/pattern/Scanner.h:
 
-/home/xshell/git/RehtSe/include/pattern/Pattern.h:
+../include/pattern/Pattern.h:
 
-/home/xshell/git/RehtSe/include/err.h:
+../include/err.h:

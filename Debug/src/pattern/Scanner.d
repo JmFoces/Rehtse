@@ -1,13 +1,11 @@
 src/pattern/Scanner.o: ../src/pattern/Scanner.cpp \
- /home/xshell/git/RehtSe/include/pattern/Scanner.h \
- /home/xshell/git/RehtSe/include/pattern/Pattern.h \
- /home/xshell/git/RehtSe/include/misc.h \
- /home/xshell/git/RehtSe/include/err.h
+ ../include/pattern/Scanner.h ../include/pattern/Pattern.h \
+ ../include/misc.h ../include/err.h
 
-/home/xshell/git/RehtSe/include/pattern/Scanner.h:
+../include/pattern/Scanner.h:
 
-/home/xshell/git/RehtSe/include/pattern/Pattern.h:
+../include/pattern/Pattern.h:
 
-/home/xshell/git/RehtSe/include/misc.h:
+../include/misc.h:
 
-/home/xshell/git/RehtSe/include/err.h:
+../include/err.h:
