@@ -1,0 +1,15 @@
+{	
+	"debuglevel":0,
+	"patterns":[
+		{
+			"match":{
+				"bpf":"tcp port 8000",
+				"regex":".*\\x17\\x03\\x03.*"
+			},
+			"replacement":{
+				"regex":"(\\x17\\x03\\x03)(.{2})(.)",
+				"replacement":"$0\\x41"
+			}
+		}
+	]
+}
