@@ -10,7 +10,7 @@ br_netfilter+Iptables+NFQueue+BPF+Regex ---> Easy way to modify network packets 
 
 You will need:
 
-    apt-get install libboost-all-dev libnetfilter-queue1 libnetfilter-queue-dev libpcap0.8 libpcap0.8-dev
+    apt-get install libboost-all-dev libnetfilter-queue1 libnetfilter-queue-dev libpcap0.8 libpcap0.8-dev linux-headers-amd64 gcc g++ make 
     Follow instructions to install libcrafter. 
   
 To use it:
