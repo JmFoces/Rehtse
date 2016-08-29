@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_user_interface" kind="class" language="C++" prot="public">
+    <compoundname>UserInterface</compoundname>
+    <includes refid="_user_interface_8h" local="no">UserInterface.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_user_interface_1ae4736080db86b9df78359826bd993cc5" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char UserInterface::OP_CODE_SHOW</definition>
+        <argsstring></argsstring>
+        <name>OP_CODE_SHOW</name>
+        <initializer>=&apos;s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class designed to interact with user. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="52" column="1" bodyfile="/home/xshell/git/RehtSe/include/UserInterface.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_interface_1a20eef406b46e1b32db660b50cf30e796" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char UserInterface::OP_CODE_QUIT</definition>
+        <argsstring></argsstring>
+        <name>OP_CODE_QUIT</name>
+        <initializer>=&apos;q&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="53" column="1" bodyfile="/home/xshell/git/RehtSe/include/UserInterface.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_user_interface_1a50fe9f4eb669efb5ec1224f0c3e0b814" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service</type>
+        <definition>boost::asio::io_service UserInterface::ios</definition>
+        <argsstring></argsstring>
+        <name>ios</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="84" column="1" bodyfile="/home/xshell/git/RehtSe/include/UserInterface.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_interface_1a96e397990756e8b27e862a173c73e56d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_scanner" kindref="compound">Scanner</ref> *</type>
+        <definition>Scanner* UserInterface::scanner</definition>
+        <argsstring></argsstring>
+        <name>scanner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="85" column="1" bodyfile="/home/xshell/git/RehtSe/include/UserInterface.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_user_interface_1ae6fb70370701b3bd6120e923df9705b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UserInterface::UserInterface</definition>
+        <argsstring>()</argsstring>
+        <name>UserInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_user_interface_1ae6fb70370701b3bd6120e923df9705b0" kindref="member">UserInterface()</ref> Not much to say, initializes logger. In the future it will configure filename instead of using hardcoded config.json. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="59" column="1" bodyfile="/home/xshell/git/RehtSe/src/UserInterface.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_interface_1ae588b2ff1711a016dd4c6fc5002c0841" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>UserInterface::~UserInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~UserInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="60" column="1" bodyfile="/home/xshell/git/RehtSe/src/UserInterface.cpp" bodystart="32" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_interface_1a6d8d6d6b6900823be51259efba78b400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserInterface::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_user_interface_1a6d8d6d6b6900823be51259efba78b400" kindref="member">run()</ref> Parses config.json. Instantiates <ref refid="class_scanner" kindref="compound">Scanner</ref> and add as patterns as defined in the file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="65" column="1" bodyfile="/home/xshell/git/RehtSe/src/UserInterface.cpp" bodystart="54" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_interface_1a79350878c72585ae34e4321613ed2c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserInterface::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_user_interface_1a79350878c72585ae34e4321613ed2c1a" kindref="member">start()</ref> Initializes Crafter. In the future any necessary previous operations will be performed here. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="71" column="1" bodyfile="/home/xshell/git/RehtSe/src/UserInterface.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_interface_1aed9ff11dad1ecd1611498771b63bc47d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserInterface::quit</definition>
+        <argsstring>()</argsstring>
+        <name>quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_user_interface_1aed9ff11dad1ecd1611498771b63bc47d" kindref="member">quit()</ref> Releases all and exits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="76" column="1" bodyfile="/home/xshell/git/RehtSe/src/UserInterface.cpp" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_interface_1a66e0842cd0c15c03162bdbb4b1a8583b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserInterface::init_logging</definition>
+        <argsstring>(boost::log::trivial::severity_level)</argsstring>
+        <name>init_logging</name>
+        <param>
+          <type>boost::log::trivial::severity_level</type>
+          <defname>severity</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes logging without file, just to STDOUT. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boost::log::trivial::severity_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="81" column="1" bodyfile="/home/xshell/git/RehtSe/src/UserInterface.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xshell/git/RehtSe/include/UserInterface.h" line="47" column="1" bodyfile="/home/xshell/git/RehtSe/include/UserInterface.h" bodystart="47" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_user_interface_1a66e0842cd0c15c03162bdbb4b1a8583b" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>init_logging</name></member>
+      <member refid="class_user_interface_1a50fe9f4eb669efb5ec1224f0c3e0b814" prot="private" virt="non-virtual"><scope>UserInterface</scope><name>ios</name></member>
+      <member refid="class_user_interface_1a20eef406b46e1b32db660b50cf30e796" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>OP_CODE_QUIT</name></member>
+      <member refid="class_user_interface_1ae4736080db86b9df78359826bd993cc5" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>OP_CODE_SHOW</name></member>
+      <member refid="class_user_interface_1aed9ff11dad1ecd1611498771b63bc47d" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>quit</name></member>
+      <member refid="class_user_interface_1a6d8d6d6b6900823be51259efba78b400" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>run</name></member>
+      <member refid="class_user_interface_1a96e397990756e8b27e862a173c73e56d" prot="private" virt="non-virtual"><scope>UserInterface</scope><name>scanner</name></member>
+      <member refid="class_user_interface_1a79350878c72585ae34e4321613ed2c1a" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>start</name></member>
+      <member refid="class_user_interface_1ae6fb70370701b3bd6120e923df9705b0" prot="public" virt="non-virtual"><scope>UserInterface</scope><name>UserInterface</name></member>
+      <member refid="class_user_interface_1ae588b2ff1711a016dd4c6fc5002c0841" prot="public" virt="virtual"><scope>UserInterface</scope><name>~UserInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

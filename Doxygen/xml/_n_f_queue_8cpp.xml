@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_n_f_queue_8cpp" kind="file" language="C++">
+    <compoundname>NFQueue.cpp</compoundname>
+    <includes refid="_n_f_queue_8h" local="yes">NFQueue.h</includes>
+    <incdepgraph>
+      <node id="582">
+        <label>list</label>
+      </node>
+      <node id="586">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="612">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="583">
+        <label>iomanip</label>
+      </node>
+      <node id="580">
+        <label>NFQueue.h</label>
+        <link refid="_n_f_queue_8h"/>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>iterator</label>
+      </node>
+      <node id="588">
+        <label>boost/log/core.hpp</label>
+      </node>
+      <node id="594">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="605">
+        <label>cassert</label>
+      </node>
+      <node id="611">
+        <label>flows/Flow.h</label>
+        <link refid="_flow_8h"/>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>string</label>
+      </node>
+      <node id="610">
+        <label>radix_tree_node.hpp</label>
+        <link refid="radix__tree__node_8hpp"/>
+        <childnode refid="596" relation="include">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>map</label>
+      </node>
+      <node id="617">
+        <label>libnetfilter_queue/libnetfilter_queue_ipv4.h</label>
+      </node>
+      <node id="614">
+        <label>linux/netfilter.h</label>
+      </node>
+      <node id="589">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="615">
+        <label>libnetfilter_queue/libnetfilter_queue.h</label>
+      </node>
+      <node id="604">
+        <label>radix_tree.hpp</label>
+        <link refid="radix__tree_8hpp"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>boost/log/expressions.hpp</label>
+      </node>
+      <node id="599">
+        <label>net/if_arp.h</label>
+      </node>
+      <node id="592">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="600">
+        <label>netinet/if_ether.h</label>
+      </node>
+      <node id="608">
+        <label>radix_tree_it.hpp</label>
+        <link refid="radix__tree__it_8hpp"/>
+        <childnode refid="609" relation="include">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>crafter/Utils/TCPConnection.h</label>
+      </node>
+      <node id="607">
+        <label>vector</label>
+      </node>
+      <node id="603">
+        <label>flows/FlowTracker.h</label>
+        <link refid="_flow_tracker_8h"/>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+      </node>
+      <node id="606">
+        <label>utility</label>
+      </node>
+      <node id="616">
+        <label>libnfnetlink/libnfnetlink.h</label>
+      </node>
+      <node id="584">
+        <label>time.h</label>
+      </node>
+      <node id="585">
+        <label>cstdlib</label>
+      </node>
+      <node id="581">
+        <label>iostream</label>
+      </node>
+      <node id="598">
+        <label>net/ethernet.h</label>
+      </node>
+      <node id="593">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="579">
+        <label>/home/xshell/git/RehtSe/src/NFQueue.cpp</label>
+        <link refid="NFQueue.cpp"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>boost/regex.hpp</label>
+      </node>
+      <node id="591">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>set</label>
+      </node>
+      <node id="601">
+        <label>crafter.h</label>
+      </node>
+      <node id="587">
+        <label>linux/if_ether.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_n_f_queue_8cpp_1ae2711d47c89b02f524b8fe0e042680b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int qpacket</definition>
+        <argsstring>(nfq_q_handle *myQueue, struct nfgenmsg *msg, nfq_data *nfq_data, void *cbData)</argsstring>
+        <name>qpacket</name>
+        <param>
+          <type>nfq_q_handle *</type>
+          <declname>myQueue</declname>
+        </param>
+        <param>
+          <type>struct nfgenmsg *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="structnfq__data" kindref="compound">nfq_data</ref> *</type>
+          <declname>nfq_data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cbData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/src/NFQueue.cpp" line="100" column="1" bodyfile="/home/xshell/git/RehtSe/src/NFQueue.cpp" bodystart="100" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016,<sp/>José<sp/>María<sp/>Foces<sp/>Vivancos</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;organization&gt;<sp/>nor<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>ESTEBAN<sp/>PELLEGRINO<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_f_queue_8h" kindref="compound">NFQueue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_n_f_queue_1a8fbffa750318af4d6a9323a2ab50b409" refkind="member"><highlight class="normal"><ref refid="class_n_f_queue_1a8fbffa750318af4d6a9323a2ab50b409" kindref="member">NFQueue::NFQueue</ref>(boost::asio::io_service*<sp/>ioservice):</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>netfilterqueue_stream(*ioservice)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>Auto-generated<sp/>constructor<sp/>stub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_n_f_queue_1acebef7ff7290fbadb7fd04ff3075130c" kindref="member">ios</ref>=<ref refid="class_n_f_queue_1acebef7ff7290fbadb7fd04ff3075130c" kindref="member">ios</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>a<sp/>queue<sp/>connection<sp/>handle<sp/>from<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(nfqHandle<sp/>=<sp/>nfq_open()))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>in<sp/>nfq_open()&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nfq_unbind_pf(nfqHandle,<sp/>PF_PACKET)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>in<sp/>nfq_unbind_pf()&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Bind<sp/>this<sp/>handler<sp/>to<sp/>process<sp/>IP<sp/>packets...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nfq_bind_pf(nfqHandle,<sp/>PF_PACKET)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>in<sp/>nfq_bind_pf()&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Install<sp/>a<sp/>callback<sp/>on<sp/>queue<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(myQueue<sp/>=<sp/>nfq_create_queue(nfqHandle,<sp/><sp/>0,<sp/>&amp;qpacket,<sp/>NULL)))<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>in<sp/>nfq_create_queue()&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Turn<sp/>on<sp/>packet<sp/>copy<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nfq_set_mode(myQueue,<sp/>NFQNL_COPY_PACKET,<sp/>0xffff)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>set<sp/>packet<sp/>copy<sp/>mode&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>netlinkHandle<sp/>=<sp/>nfq_nfnlh(nfqHandle);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fd<sp/>=<sp/>nfnl_fd(netlinkHandle);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::system::error_code<sp/>ec;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>netfilterqueue_stream.assign(<sp/>fd<sp/>,<sp/>ec<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(info)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;netfilter<sp/>queue<sp/>opened<sp/>up<sp/>as<sp/>fd<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fd<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>ec.message()<sp/>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_n_f_queue_1a5755ef3cf16e5a80d129f09c920a09d6" refkind="member"><highlight class="normal"><ref refid="class_n_f_queue_1a5755ef3cf16e5a80d129f09c920a09d6" kindref="member">NFQueue::~NFQueue</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>Auto-generated<sp/>destructor<sp/>stub</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69" refid="class_n_f_queue_1af92f81186532c755361d278f423d4bfb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_n_f_queue_1af92f81186532c755361d278f423d4bfb" kindref="member">NFQueue::async_process_netfilterqueue_packet</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::asio::async_read(netfilterqueue_stream,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::asio::mutable_buffers_1(buf,ETHERMTU),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::asio::transfer_at_least(1),</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::system::error_code<sp/>&amp;error,<sp/>std::size_t<sp/>bytes_read)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>error<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(error)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>read<sp/>from<sp/>netfilter<sp/>queue<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bytes_read<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>bytes):<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>error.message();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;------------------------------------------------------------&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;read<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bytes_read<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>bytes<sp/>from<sp/>netfilter<sp/>queue<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><sp/><ref refid="misc_8h_1aee1c18572400116715202d5df122941d" kindref="member">hexa_print</ref>(buf,bytes_read);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>the<sp/>packet<sp/>to<sp/>the<sp/>callback<sp/>to<sp/>be<sp/>processed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nfq_handle_packet(<sp/>nfqHandle,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)buf,<sp/>bytes_read<sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>schedule<sp/>another<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*int<sp/>x;</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cin<sp/>&gt;&gt;<sp/>x;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_n_f_queue_1af92f81186532c755361d278f423d4bfb" kindref="member">async_process_netfilterqueue_packet</ref>(<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qpacket(nfq_q_handle<sp/>*myQueue,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>nfgenmsg<sp/>*msg,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnfq__data" kindref="compound">nfq_data</ref><sp/>*<ref refid="structnfq__data" kindref="compound">nfq_data</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cbData)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flow_tracker" kindref="compound">FlowTracker</ref>*<sp/>flow_tracker<sp/>=<sp/><ref refid="class_flow_tracker_1ad0202e9012b222ffb96eb3c108949053" kindref="member">FlowTracker::instance</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>nfqnl_msg_packet_hdr<sp/>*header;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((header<sp/>=<sp/>nfq_get_msg_packet_hdr(nfq_data)))<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>ntohl(header-&gt;packet_id);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pktData;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>nfq_get_payload(nfq_data,<sp/>&amp;pktData);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Decoding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;Packet:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/><ref refid="misc_8h_1aee1c18572400116715202d5df122941d" kindref="member">hexa_print</ref>((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)pktData,len);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>Crafter::Packet<sp/>packet_obj((uint8_t*)pktData,len,Crafter::IP::PROTO);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>packet_obj.Print(ss);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DECODED<sp/>Packet<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>ss.str();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>packet_modified<sp/>=<sp/>flow_tracker-&gt;<ref refid="class_flow_tracker_1a8209b693ab5ad12ef22f6793f4f98deb" kindref="member">handlePacket</ref>(&amp;packet_obj);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(packet_modified){</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Recraft-&gt;<sp/>dispatch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet_obj.PreCraft();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length_mod<sp/>=<sp/>packet_obj.GetData(pktData);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet_obj.Print(ss);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DECODED<sp/>MODIFIED<sp/>Packet<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>ss.str();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PACKET<sp/>MOD<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="misc_8h_1aee1c18572400116715202d5df122941d" kindref="member">hexa_print</ref>(pktData,length_mod);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nfq_set_verdict(myQueue,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>NF_ACCEPT,<sp/>length_mod,pktData);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Send<sp/>as<sp/>it<sp/>came<sp/>to<sp/>us.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nfq_set_verdict(myQueue,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>NF_ACCEPT,<sp/>len,pktData);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/xshell/git/RehtSe/src/NFQueue.cpp"/>
+  </compounddef>
+</doxygen>

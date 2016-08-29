@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_pattern" kind="class" language="C++" prot="public">
+    <compoundname>Pattern</compoundname>
+    <includes refid="_pattern_8h" local="no">Pattern.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pattern_1a0b78090b43baba71423fe15cca72b33e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Pattern::bpf_string</definition>
+        <argsstring></argsstring>
+        <name>bpf_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="101" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pattern_1a18a035d267bdaa589c6dbb049f591b15" prot="private" static="no" mutable="no">
+        <type>boost::regex</type>
+        <definition>boost::regex Pattern::regex</definition>
+        <argsstring></argsstring>
+        <name>regex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="102" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pattern_1a3aa5d65016be0207b93f686716c68293" prot="private" static="no" mutable="no">
+        <type>bpf_program *</type>
+        <definition>bpf_program* Pattern::bpf_compiled</definition>
+        <argsstring></argsstring>
+        <name>bpf_compiled</name>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="103" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pattern_1a78e3aa52236c937d5bfcffabb2055e88" prot="private" static="no" mutable="no">
+        <type>pcap_t *</type>
+        <definition>pcap_t* Pattern::pcap</definition>
+        <argsstring></argsstring>
+        <name>pcap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="104" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pattern_1a4acf42756bc6b11ce0b7629f9b484dd6" prot="private" static="no" mutable="no">
+        <type>boost::regex</type>
+        <definition>boost::regex Pattern::replacement_regex</definition>
+        <argsstring></argsstring>
+        <name>replacement_regex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="106" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pattern_1a759725ec5ca2caa91c6f93f9b1e71a09" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Pattern::raw_replacement</definition>
+        <argsstring></argsstring>
+        <name>raw_replacement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="107" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pattern_1a7d6f58ea6e73e4b79a7f722a59ce64af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pattern::Pattern</definition>
+        <argsstring>(std::string, std::string, std::string, std::string)</argsstring>
+        <name>Pattern</name>
+        <param>
+          <type>std::string</type>
+          <defname>bpf</defname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <defname>regex</defname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <defname>replacement_regex</defname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <defname>raw_replacement</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Class that implements a <ref refid="class_pattern" kindref="compound">Pattern</ref>. A pattern is composed by: BPF filter Regex Plus some replacement stuff that fits the operations for what this program is thought to be. Replacement is composed by a regex and a replacement string. Constructs a pattern from: bpf_string(bpf), regex(regex), replacement_regex(replacement_regex), raw_replacement(raw_replacement) It compiles the bpf program and regex. Raises: BPF_ERR if cannot compile the filter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>std::string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bpf filter string. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std::string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>regex to match packets against </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std::string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>regex to replace content </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std::string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>replacement string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="62" column="1" bodyfile="/home/xshell/git/RehtSe/src/pattern/Pattern.cpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pattern_1ae0acce75099bf7776feab7d86f34e21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pattern::Pattern</definition>
+        <argsstring>(boost::property_tree::ptree)</argsstring>
+        <name>Pattern</name>
+        <param>
+          <type>boost::property_tree::ptree</type>
+          <defname>ptree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a pattern from ptree (directly from config file). It compiles the bpf program and regex. Raises: BPF_ERR if cannot compile the filter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boost::property_tree::ptree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to create the object from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="70" column="1" bodyfile="/home/xshell/git/RehtSe/src/pattern/Pattern.cpp" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pattern_1a9b89524b05dc9430bd479928d4c08a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pattern::check</definition>
+        <argsstring>(Crafter::Packet *)</argsstring>
+        <name>check</name>
+        <param>
+          <type>Crafter::Packet *</type>
+          <defname>packet</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the packet matches the given BPF program and regex. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Crafter::Packet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* to be checked for matching this pattern. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="75" column="1" bodyfile="/home/xshell/git/RehtSe/src/pattern/Pattern.cpp" bodystart="62" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pattern_1a6e8b9388bbd39934e9f9534b974d7498" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Pattern::~Pattern</definition>
+        <argsstring>()</argsstring>
+        <name>~Pattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="77" column="1" bodyfile="/home/xshell/git/RehtSe/src/pattern/Pattern.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pattern_1af1563aeb5e7bb378e810267da623906e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Pattern::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes printable parts of itself to a string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="81" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pattern_1ac18d670fe54682f7fc6e3da229988ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t Pattern::applyReplacement</definition>
+        <argsstring>(Crafter::Layer *)</argsstring>
+        <name>applyReplacement</name>
+        <param>
+          <type>Crafter::Layer *</type>
+          <defname>layer</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply replacement regex over the given layer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Crafter::Layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* over what the replacement will be applied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int32_t meaning the bytes balance: &gt;0 if added data &lt;0 if replaced data is smaller than the provided one </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="95" column="1" bodyfile="/home/xshell/git/RehtSe/src/pattern/Pattern.cpp" bodystart="97" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pattern_1ad76ec9e1b29f85b8e55b6264ef46e7cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pattern::init_pcap_bpf</definition>
+        <argsstring>()</argsstring>
+        <name>init_pcap_bpf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compiles the BPF program. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="100" column="1" bodyfile="/home/xshell/git/RehtSe/src/pattern/Pattern.cpp" bodystart="36" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xshell/git/RehtSe/include/pattern/Pattern.h" line="38" column="1" bodyfile="/home/xshell/git/RehtSe/include/pattern/Pattern.h" bodystart="38" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_pattern_1ac18d670fe54682f7fc6e3da229988ca0" prot="public" virt="non-virtual"><scope>Pattern</scope><name>applyReplacement</name></member>
+      <member refid="class_pattern_1a3aa5d65016be0207b93f686716c68293" prot="private" virt="non-virtual"><scope>Pattern</scope><name>bpf_compiled</name></member>
+      <member refid="class_pattern_1a0b78090b43baba71423fe15cca72b33e" prot="private" virt="non-virtual"><scope>Pattern</scope><name>bpf_string</name></member>
+      <member refid="class_pattern_1a9b89524b05dc9430bd479928d4c08a4d" prot="public" virt="non-virtual"><scope>Pattern</scope><name>check</name></member>
+      <member refid="class_pattern_1ad76ec9e1b29f85b8e55b6264ef46e7cd" prot="private" virt="non-virtual"><scope>Pattern</scope><name>init_pcap_bpf</name></member>
+      <member refid="class_pattern_1a7d6f58ea6e73e4b79a7f722a59ce64af" prot="public" virt="non-virtual"><scope>Pattern</scope><name>Pattern</name></member>
+      <member refid="class_pattern_1ae0acce75099bf7776feab7d86f34e21f" prot="public" virt="non-virtual"><scope>Pattern</scope><name>Pattern</name></member>
+      <member refid="class_pattern_1a78e3aa52236c937d5bfcffabb2055e88" prot="private" virt="non-virtual"><scope>Pattern</scope><name>pcap</name></member>
+      <member refid="class_pattern_1af1563aeb5e7bb378e810267da623906e" prot="public" virt="non-virtual"><scope>Pattern</scope><name>print</name></member>
+      <member refid="class_pattern_1a759725ec5ca2caa91c6f93f9b1e71a09" prot="private" virt="non-virtual"><scope>Pattern</scope><name>raw_replacement</name></member>
+      <member refid="class_pattern_1a18a035d267bdaa589c6dbb049f591b15" prot="private" virt="non-virtual"><scope>Pattern</scope><name>regex</name></member>
+      <member refid="class_pattern_1a4acf42756bc6b11ce0b7629f9b484dd6" prot="private" virt="non-virtual"><scope>Pattern</scope><name>replacement_regex</name></member>
+      <member refid="class_pattern_1a6e8b9388bbd39934e9f9534b974d7498" prot="public" virt="virtual"><scope>Pattern</scope><name>~Pattern</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,198 @@
+\hypertarget{misc_8h}{}\section{/home/xshell/git/\+Reht\+Se/include/misc.h File Reference}
+\label{misc_8h}\index{/home/xshell/git/\+Reht\+Se/include/misc.\+h@{/home/xshell/git/\+Reht\+Se/include/misc.\+h}}
+{\ttfamily \#include $<$boost/asio.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/format.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$net/ethernet.\+h$>$}\\*
+{\ttfamily \#include $<$net/if\+\_\+arp.\+h$>$}\\*
+{\ttfamily \#include $<$netinet/if\+\_\+ether.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{misc_8h_adc9fcc1ff8224752ddf74b9e62adb44f}{\+\_\+\+M\+I\+SC}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::asio\+::generic\+::raw\+\_\+protocol \hyperlink{misc_8h_a588ff42749a655a5c2facfe521dee292}{raw\+\_\+protocol\+\_\+t}
+\item 
+typedef boost\+::asio\+::generic\+::basic\+\_\+endpoint$<$ \hyperlink{misc_8h_a588ff42749a655a5c2facfe521dee292}{raw\+\_\+protocol\+\_\+t} $>$ \hyperlink{misc_8h_a8ecd3c4f6eb9ecceaef7d16699844e97}{raw\+\_\+endpoint\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{misc_8h_aee1c18572400116715202d5df122941d}{hexa\+\_\+print} (const unsigned char $\ast$array, int lenght)
+\item 
+std\+::string \hyperlink{misc_8h_aa7e729572a36d0773255024fbc1076c9}{hexa\+\_\+print} (const char $\ast$array, int lenght)
+\item 
+bool \hyperlink{misc_8h_af14f80c6b321f2805138e03b832c9091}{match\+\_\+regex} (std\+::string target, boost\+::regex regex)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \hyperlink{misc_8h_a9f3835402fa4cd5cf9e8a893dd2ad50d}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL} =\char`\"{}debuglevel\char`\"{}
+\item 
+const std\+::string \hyperlink{misc_8h_a3ce1abda25fbb8efa77515b68792409c}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS} =\char`\"{}patterns\char`\"{}
+\item 
+const std\+::string \hyperlink{misc_8h_abee3879c3423745f91f3889639d58709}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH} =\char`\"{}match\char`\"{}
+\item 
+const std\+::string \hyperlink{misc_8h_a78ae67eeac5f35df8960b4f2ec256cb8}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY} =\char`\"{}modify\char`\"{}
+\item 
+const std\+::string \hyperlink{misc_8h_ab56c159876f6acd54ea5297d5a003c6d}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT} =\char`\"{}replacement\char`\"{}
+\item 
+const std\+::string \hyperlink{misc_8h_abf3449c5c0efb6b896555f1e3e651d21}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX} =\char`\"{}regex\char`\"{}
+\item 
+const std\+::string \hyperlink{misc_8h_a72f2f4f65d0b3d6110cf79a17359747e}{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF} =\char`\"{}bpf\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{misc.\+h@{misc.\+h}!\+\_\+\+M\+I\+SC@{\+\_\+\+M\+I\+SC}}
+\index{\+\_\+\+M\+I\+SC@{\+\_\+\+M\+I\+SC}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+M\+I\+SC}{_MISC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+M\+I\+SC}\hypertarget{misc_8h_adc9fcc1ff8224752ddf74b9e62adb44f}{}\label{misc_8h_adc9fcc1ff8224752ddf74b9e62adb44f}
+
+
+Definition at line 28 of file misc.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\index{misc.\+h@{misc.\+h}!raw\+\_\+endpoint\+\_\+t@{raw\+\_\+endpoint\+\_\+t}}
+\index{raw\+\_\+endpoint\+\_\+t@{raw\+\_\+endpoint\+\_\+t}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{raw\+\_\+endpoint\+\_\+t}{raw_endpoint_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::asio\+::generic\+::basic\+\_\+endpoint$<${\bf raw\+\_\+protocol\+\_\+t}$>$ {\bf raw\+\_\+endpoint\+\_\+t}}\hypertarget{misc_8h_a8ecd3c4f6eb9ecceaef7d16699844e97}{}\label{misc_8h_a8ecd3c4f6eb9ecceaef7d16699844e97}
+
+
+Definition at line 49 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!raw\+\_\+protocol\+\_\+t@{raw\+\_\+protocol\+\_\+t}}
+\index{raw\+\_\+protocol\+\_\+t@{raw\+\_\+protocol\+\_\+t}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{raw\+\_\+protocol\+\_\+t}{raw_protocol_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::asio\+::generic\+::raw\+\_\+protocol {\bf raw\+\_\+protocol\+\_\+t}}\hypertarget{misc_8h_a588ff42749a655a5c2facfe521dee292}{}\label{misc_8h_a588ff42749a655a5c2facfe521dee292}
+
+
+Definition at line 48 of file misc.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{misc.\+h@{misc.\+h}!hexa\+\_\+print@{hexa\+\_\+print}}
+\index{hexa\+\_\+print@{hexa\+\_\+print}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{hexa\+\_\+print(const unsigned char $\ast$array, int lenght)}{hexa_print(const unsigned char *array, int lenght)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string hexa\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{array, }
+\item[{int}]{lenght}
+\end{DoxyParamCaption}
+)}\hypertarget{misc_8h_aee1c18572400116715202d5df122941d}{}\label{misc_8h_aee1c18572400116715202d5df122941d}
+Formats the array to hexadecimal. 
+\begin{DoxyParams}{Parameters}
+{\em const} & unsigned char$\ast$ \\
+\hline
+{\em int} & length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string containing hexadecimal representation of the array. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file misc.\+cpp.
+
+\index{misc.\+h@{misc.\+h}!hexa\+\_\+print@{hexa\+\_\+print}}
+\index{hexa\+\_\+print@{hexa\+\_\+print}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{hexa\+\_\+print(const char $\ast$array, int lenght)}{hexa_print(const char *array, int lenght)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string hexa\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{array, }
+\item[{int}]{lenght}
+\end{DoxyParamCaption}
+)}\hypertarget{misc_8h_aa7e729572a36d0773255024fbc1076c9}{}\label{misc_8h_aa7e729572a36d0773255024fbc1076c9}
+Formats the array to hexadecimal. 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ \\
+\hline
+{\em int} & length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string containing hexadecimal representation of the array. 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file misc.\+cpp.
+
+\index{misc.\+h@{misc.\+h}!match\+\_\+regex@{match\+\_\+regex}}
+\index{match\+\_\+regex@{match\+\_\+regex}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{match\+\_\+regex(std\+::string target, boost\+::regex regex)}{match_regex(std::string target, boost::regex regex)}}]{\setlength{\rightskip}{0pt plus 5cm}bool match\+\_\+regex (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{target, }
+\item[{boost\+::regex}]{regex}
+\end{DoxyParamCaption}
+)}\hypertarget{misc_8h_af14f80c6b321f2805138e03b832c9091}{}\label{misc_8h_af14f80c6b321f2805138e03b832c9091}
+Checks the given regex over the target and returns the result. 
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & target content to match against regex \\
+\hline
+{\em boost\+::regex} & regex regex to apply \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if matches. 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file misc.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF}{CONF_KEY_BPF}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+B\+PF =\char`\"{}bpf\char`\"{}}\hypertarget{misc_8h_a72f2f4f65d0b3d6110cf79a17359747e}{}\label{misc_8h_a72f2f4f65d0b3d6110cf79a17359747e}
+
+
+Definition at line 47 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL}{CONF_KEY_LOGLEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+L\+O\+G\+L\+E\+V\+EL =\char`\"{}debuglevel\char`\"{}}\hypertarget{misc_8h_a9f3835402fa4cd5cf9e8a893dd2ad50d}{}\label{misc_8h_a9f3835402fa4cd5cf9e8a893dd2ad50d}
+
+
+Definition at line 41 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH}{CONF_KEY_MATCH}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+A\+T\+CH =\char`\"{}match\char`\"{}}\hypertarget{misc_8h_abee3879c3423745f91f3889639d58709}{}\label{misc_8h_abee3879c3423745f91f3889639d58709}
+
+
+Definition at line 43 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY}{CONF_KEY_MODIFY}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+M\+O\+D\+I\+FY =\char`\"{}modify\char`\"{}}\hypertarget{misc_8h_a78ae67eeac5f35df8960b4f2ec256cb8}{}\label{misc_8h_a78ae67eeac5f35df8960b4f2ec256cb8}
+
+
+Definition at line 44 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS}{CONF_KEY_PATTERNS}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+T\+T\+E\+R\+NS =\char`\"{}patterns\char`\"{}}\hypertarget{misc_8h_a3ce1abda25fbb8efa77515b68792409c}{}\label{misc_8h_a3ce1abda25fbb8efa77515b68792409c}
+
+
+Definition at line 42 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX}{CONF_KEY_REGEX}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+G\+EX =\char`\"{}regex\char`\"{}}\hypertarget{misc_8h_abf3449c5c0efb6b896555f1e3e651d21}{}\label{misc_8h_abf3449c5c0efb6b896555f1e3e651d21}
+
+
+Definition at line 46 of file misc.\+h.
+
+\index{misc.\+h@{misc.\+h}!C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT}}
+\index{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT@{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT}!misc.\+h@{misc.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT}{CONF_KEY_REPLACEMENT}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string C\+O\+N\+F\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT =\char`\"{}replacement\char`\"{}}\hypertarget{misc_8h_ab56c159876f6acd54ea5297d5a003c6d}{}\label{misc_8h_ab56c159876f6acd54ea5297d5a003c6d}
+
+
+Definition at line 45 of file misc.\+h.
+

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_0ac847a4ed0167b84943fa8efd4a0880" kind="dir">
+    <compoundname>/home/xshell/git/RehtSe/Debug/src/flows</compoundname>
+    <innerfile refid="_flow_8d">Flow.d</innerfile>
+    <innerfile refid="_flow_tracker_8d">FlowTracker.d</innerfile>
+    <innerfile refid="_generic_flow_8d">GenericFlow.d</innerfile>
+    <innerfile refid="_peer_8d">Peer.d</innerfile>
+    <innerfile refid="_t_c_p_flow_8d">TCPFlow.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xshell/git/RehtSe/Debug/src/flows/"/>
+  </compounddef>
+</doxygen>

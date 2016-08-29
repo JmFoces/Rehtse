@@ -1,0 +1,176 @@
+\hypertarget{class_t_c_p_flow}{}\section{T\+C\+P\+Flow Class Reference}
+\label{class_t_c_p_flow}\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+
+
+{\ttfamily \#include $<$T\+C\+P\+Flow.\+h$>$}
+
+Inheritance diagram for T\+C\+P\+Flow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_c_p_flow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_c_p_flow_a7fe59ac4b0710567478252f8d4ad9bb1}{T\+C\+P\+Flow} (std\+::string)
+\item 
+virtual \hyperlink{class_t_c_p_flow_a365f33092bd2f25a149f77da0d29ad29}{$\sim$\+T\+C\+P\+Flow} ()
+\item 
+bool \hyperlink{class_t_c_p_flow_a3ff0dd52eb3f3660dcb092d47da1b2f5}{handle\+Packet} (Crafter\+::\+Packet $\ast$)
+\item 
+uint32\+\_\+t \hyperlink{class_t_c_p_flow_a85ad192ed9d9f981ba87f6b2f79edf2a}{update\+Seq\+Number} (uint32\+\_\+t)
+\item 
+uint32\+\_\+t \hyperlink{class_t_c_p_flow_a4fe05bb98dfa337784489cc669a79ea2}{update\+Ack\+Number} (uint32\+\_\+t)
+\item 
+uint32\+\_\+t \hyperlink{class_t_c_p_flow_a1b42d5a597eb1d337f217a0974f48ffe}{get\+Balance} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_t_c_p_flow_acebd32b83a41150d51c1fb0bd4d0dacf}{update\+Key} (std\+::string \&key\+\_\+s, std\+::string \&key\+\_\+d, Crafter\+::\+IP $\ast$packet)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file T\+C\+P\+Flow.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{T\+C\+P\+Flow(std\+::string)}{TCPFlow(std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Flow\+::\+T\+C\+P\+Flow (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_c_p_flow_a7fe59ac4b0710567478252f8d4ad9bb1}{}\label{class_t_c_p_flow_a7fe59ac4b0710567478252f8d4ad9bb1}
+Creates an instance from the key provided. 
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & key identifying this flow. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file T\+C\+P\+Flow.\+cpp.
+
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!````~T\+C\+P\+Flow@{$\sim$\+T\+C\+P\+Flow}}
+\index{````~T\+C\+P\+Flow@{$\sim$\+T\+C\+P\+Flow}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{$\sim$\+T\+C\+P\+Flow()}{~TCPFlow()}}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+P\+Flow\+::$\sim$\+T\+C\+P\+Flow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_t_c_p_flow_a365f33092bd2f25a149f77da0d29ad29}{}\label{class_t_c_p_flow_a365f33092bd2f25a149f77da0d29ad29}
+
+
+Definition at line 34 of file T\+C\+P\+Flow.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!get\+Balance@{get\+Balance}}
+\index{get\+Balance@{get\+Balance}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{get\+Balance()}{getBalance()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+C\+P\+Flow\+::get\+Balance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_t_c_p_flow_a1b42d5a597eb1d337f217a0974f48ffe}{}\label{class_t_c_p_flow_a1b42d5a597eb1d337f217a0974f48ffe}
+Returns the current balance \begin{DoxyReturn}{Returns}
+uint32\+\_\+t 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file T\+C\+P\+Flow.\+h.
+
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!handle\+Packet@{handle\+Packet}}
+\index{handle\+Packet@{handle\+Packet}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{handle\+Packet(\+Crafter\+::\+Packet $\ast$)}{handlePacket(Crafter::Packet *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool T\+C\+P\+Flow\+::handle\+Packet (
+\begin{DoxyParamCaption}
+\item[{Crafter\+::\+Packet $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_t_c_p_flow_a3ff0dd52eb3f3660dcb092d47da1b2f5}{}\label{class_t_c_p_flow_a3ff0dd52eb3f3660dcb092d47da1b2f5}
+If a packet matches it with a pattern it will update it. Handles seq and ack numbers to make everything traspartent. Once modify it will update further packets inside this connection. Use its brother to keep everything consistent. 
+\begin{DoxyParams}{Parameters}
+{\em Crafter\+::\+Packet$\ast$} & to be handled. This object may be modified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool. True if packet was modified. 
+\end{DoxyReturn}
+T\+CP Will be placed always inside IP. 
+
+Implements \hyperlink{class_flow_aabcb243e3a9c04c1eb9b1090a3520544}{Flow}.
+
+
+
+Definition at line 43 of file T\+C\+P\+Flow.\+cpp.
+
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!update\+Ack\+Number@{update\+Ack\+Number}}
+\index{update\+Ack\+Number@{update\+Ack\+Number}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{update\+Ack\+Number(uint32\+\_\+t)}{updateAckNumber(uint32_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+C\+P\+Flow\+::update\+Ack\+Number (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{current\+\_\+ack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_c_p_flow_a4fe05bb98dfa337784489cc669a79ea2}{}\label{class_t_c_p_flow_a4fe05bb98dfa337784489cc669a79ea2}
+Updates A\+CK number 
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & current ack number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ack number considering modifications 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file T\+C\+P\+Flow.\+cpp.
+
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!update\+Key@{update\+Key}}
+\index{update\+Key@{update\+Key}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{update\+Key(std\+::string \&key\+\_\+s, std\+::string \&key\+\_\+d, Crafter\+::\+I\+P $\ast$packet)}{updateKey(std::string &key_s, std::string &key_d, Crafter::IP *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+C\+P\+Flow\+::update\+Key (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{key\+\_\+s, }
+\item[{std\+::string \&}]{key\+\_\+d, }
+\item[{Crafter\+::\+IP $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_t_c_p_flow_acebd32b83a41150d51c1fb0bd4d0dacf}{}\label{class_t_c_p_flow_acebd32b83a41150d51c1fb0bd4d0dacf}
+Class representing a T\+CP \hyperlink{class_flow}{Flow} of information. It considers balance to update seq and ack numbers. Generates keys considering first byte pair \mbox{[}0,1\mbox{]} as sport and the second one \mbox{[}2,3\mbox{]} as dport. Updates content of strings given as parameter. 
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & \& key source direct multiplexing key \\
+\hline
+{\em std\+::string} & \& key destination opposite multiplexing key \\
+\hline
+{\em Crafter\+::\+I\+P$\ast$} & packet packet to take data from \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file T\+C\+P\+Flow.\+cpp.
+
+\index{T\+C\+P\+Flow@{T\+C\+P\+Flow}!update\+Seq\+Number@{update\+Seq\+Number}}
+\index{update\+Seq\+Number@{update\+Seq\+Number}!T\+C\+P\+Flow@{T\+C\+P\+Flow}}
+\subsubsection[{\texorpdfstring{update\+Seq\+Number(uint32\+\_\+t)}{updateSeqNumber(uint32_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+C\+P\+Flow\+::update\+Seq\+Number (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{current\+\_\+seq}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_c_p_flow_a85ad192ed9d9f981ba87f6b2f79edf2a}{}\label{class_t_c_p_flow_a85ad192ed9d9f981ba87f6b2f79edf2a}
+Updates Seq number 
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & current sequence number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sequence number considering modifications 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file T\+C\+P\+Flow.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/xshell/git/\+Reht\+Se/include/flows/\hyperlink{_t_c_p_flow_8h}{T\+C\+P\+Flow.\+h}\item 
+/home/xshell/git/\+Reht\+Se/src/flows/\hyperlink{_t_c_p_flow_8cpp}{T\+C\+P\+Flow.\+cpp}\end{DoxyCompactItemize}

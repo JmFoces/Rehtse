@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c7deadf48396ea20d5f6ecf41d708a32" kind="dir">
+    <compoundname>/home/xshell/git/RehtSe/Debug/src</compoundname>
+    <innerdir refid="dir_0ac847a4ed0167b84943fa8efd4a0880">/home/xshell/git/RehtSe/Debug/src/flows</innerdir>
+    <innerdir refid="dir_5b4d428ee15acd02099a5932f01da041">/home/xshell/git/RehtSe/Debug/src/pattern</innerdir>
+    <innerfile refid="main_8d">main.d</innerfile>
+    <innerfile refid="misc_8d">misc.d</innerfile>
+    <innerfile refid="_n_f_queue_8d">NFQueue.d</innerfile>
+    <innerfile refid="_u_i_8d">UI.d</innerfile>
+    <innerfile refid="_user_interface_8d">UserInterface.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xshell/git/RehtSe/Debug/src/"/>
+  </compounddef>
+</doxygen>

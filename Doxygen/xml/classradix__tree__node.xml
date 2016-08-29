@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classradix__tree__node" kind="class" language="C++" prot="public">
+    <compoundname>radix_tree_node</compoundname>
+    <includes refid="radix__tree__it_8hpp" local="no">radix_tree_it.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>K</declname>
+        <defname>K</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classradix__tree__node_1a62573e58b9e9a3c7328ca916080a38a9" prot="private" static="no">
+        <type>std::pair&lt; const K, T &gt;</type>
+        <definition>typedef std::pair&lt;const K, T&gt; radix_tree_node&lt; K, T &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="11" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classradix__tree__node_1a97dba754c8f641f82a835288dc045896" prot="private" static="no">
+        <type>std::map&lt; K, <ref refid="classradix__tree__node" kindref="compound">radix_tree_node</ref>&lt; K, T &gt; * &gt;::iterator</type>
+        <definition>typedef std::map&lt;K, radix_tree_node&lt;K, T&gt;* &gt;::iterator radix_tree_node&lt; K, T &gt;::it_child</definition>
+        <argsstring></argsstring>
+        <name>it_child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="12" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classradix__tree__node_1a0596aeb27884e8ff44f365527f6a8f12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class radix_tree&lt; K, T &gt;</definition>
+        <argsstring></argsstring>
+        <name>radix_tree&lt; K, T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="43" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classradix__tree__node_1a11139749f60f9d620915dd76917d1479" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class radix_tree_it&lt; K, T &gt;</definition>
+        <argsstring></argsstring>
+        <name>radix_tree_it&lt; K, T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="43" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classradix__tree__node_1a8edf619d70126fb3678de33b5837aacb" prot="private" static="no" mutable="no">
+        <type>std::map&lt; K, <ref refid="classradix__tree__node" kindref="compound">radix_tree_node</ref>&lt; K, T &gt; * &gt;</type>
+        <definition>std::map&lt;K, radix_tree_node&lt;K, T&gt;*&gt; radix_tree_node&lt; K, T &gt;::m_children</definition>
+        <argsstring></argsstring>
+        <name>m_children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="22" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classradix__tree__node_1ab082d5dd02edf75daf458257eaaa11fd" prot="private" static="no" mutable="no">
+        <type><ref refid="classradix__tree__node" kindref="compound">radix_tree_node</ref>&lt; K, T &gt; *</type>
+        <definition>radix_tree_node&lt;K, T&gt;* radix_tree_node&lt; K, T &gt;::m_parent</definition>
+        <argsstring></argsstring>
+        <name>m_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="23" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classradix__tree__node_1a8c67b9b1beeea1af8eb65874c95d3dfc" prot="private" static="no" mutable="no">
+        <type>value_type *</type>
+        <definition>value_type* radix_tree_node&lt; K, T &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="24" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classradix__tree__node_1a8daedd92d682e605d12eb5aee4737712" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int radix_tree_node&lt; K, T &gt;::m_depth</definition>
+        <argsstring></argsstring>
+        <name>m_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="25" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classradix__tree__node_1ad59a731cfc7efc5c4517124480d05d96" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool radix_tree_node&lt; K, T &gt;::m_is_leaf</definition>
+        <argsstring></argsstring>
+        <name>m_is_leaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="26" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classradix__tree__node_1a29608e9e413bb3b6c871e30c12c7cb36" prot="private" static="no" mutable="no">
+        <type>K</type>
+        <definition>K radix_tree_node&lt; K, T &gt;::m_key</definition>
+        <argsstring></argsstring>
+        <name>m_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="27" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classradix__tree__node_1a61c8eeac5824f6ed72db2f63776117fd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>radix_tree_node&lt; K, T &gt;::radix_tree_node</definition>
+        <argsstring>()</argsstring>
+        <name>radix_tree_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="15" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classradix__tree__node_1ac5f5da4234dc7acda3aabce6c6f5ced8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>radix_tree_node&lt; K, T &gt;::radix_tree_node</definition>
+        <argsstring>(const value_type &amp;val)</argsstring>
+        <name>radix_tree_node</name>
+        <param>
+          <type>const value_type &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="16" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="31" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classradix__tree__node_1a7a853906154a218805a4c2ebb9095c79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>radix_tree_node&lt; K, T &gt;::radix_tree_node</definition>
+        <argsstring>(const radix_tree_node &amp;)</argsstring>
+        <name>radix_tree_node</name>
+        <param>
+          <type>const <ref refid="classradix__tree__node" kindref="compound">radix_tree_node</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classradix__tree__node_1af4481f77a26a7475ef7483870993fcae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classradix__tree__node" kindref="compound">radix_tree_node</ref> &amp;</type>
+        <definition>radix_tree_node&amp; radix_tree_node&lt; K, T &gt;::operator=</definition>
+        <argsstring>(const radix_tree_node &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classradix__tree__node" kindref="compound">radix_tree_node</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classradix__tree__node_1aad5917fb5b7f6a01b4bf9f315e157116" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>radix_tree_node&lt; K, T &gt;::~radix_tree_node</definition>
+        <argsstring>()</argsstring>
+        <name>~radix_tree_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" line="20" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_node.hpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xshell/git/RehtSe/include/radix_tree_it.hpp" line="8" column="1" bodyfile="/home/xshell/git/RehtSe/include/radix_tree_it.hpp" bodystart="8" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classradix__tree__node_1a97dba754c8f641f82a835288dc045896" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>it_child</name></member>
+      <member refid="classradix__tree__node_1a8edf619d70126fb3678de33b5837aacb" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>m_children</name></member>
+      <member refid="classradix__tree__node_1a8daedd92d682e605d12eb5aee4737712" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>m_depth</name></member>
+      <member refid="classradix__tree__node_1ad59a731cfc7efc5c4517124480d05d96" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>m_is_leaf</name></member>
+      <member refid="classradix__tree__node_1a29608e9e413bb3b6c871e30c12c7cb36" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>m_key</name></member>
+      <member refid="classradix__tree__node_1ab082d5dd02edf75daf458257eaaa11fd" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>m_parent</name></member>
+      <member refid="classradix__tree__node_1a8c67b9b1beeea1af8eb65874c95d3dfc" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>m_value</name></member>
+      <member refid="classradix__tree__node_1af4481f77a26a7475ef7483870993fcae" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>operator=</name></member>
+      <member refid="classradix__tree__node_1a0596aeb27884e8ff44f365527f6a8f12" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>radix_tree&lt; K, T &gt;</name></member>
+      <member refid="classradix__tree__node_1a11139749f60f9d620915dd76917d1479" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>radix_tree_it&lt; K, T &gt;</name></member>
+      <member refid="classradix__tree__node_1a61c8eeac5824f6ed72db2f63776117fd" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>radix_tree_node</name></member>
+      <member refid="classradix__tree__node_1ac5f5da4234dc7acda3aabce6c6f5ced8" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>radix_tree_node</name></member>
+      <member refid="classradix__tree__node_1a7a853906154a218805a4c2ebb9095c79" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>radix_tree_node</name></member>
+      <member refid="classradix__tree__node_1a62573e58b9e9a3c7328ca916080a38a9" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>value_type</name></member>
+      <member refid="classradix__tree__node_1aad5917fb5b7f6a01b4bf9f315e157116" prot="private" virt="non-virtual"><scope>radix_tree_node</scope><name>~radix_tree_node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

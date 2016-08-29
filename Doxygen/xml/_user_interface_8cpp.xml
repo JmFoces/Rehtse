@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_user_interface_8cpp" kind="file" language="C++">
+    <compoundname>UserInterface.cpp</compoundname>
+    <includes refid="_user_interface_8h" local="yes">UserInterface.h</includes>
+    <incdepgraph>
+      <node id="701">
+        <label>list</label>
+      </node>
+      <node id="666">
+        <label>UserInterface.h</label>
+        <link refid="_user_interface_8h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="691">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="702">
+        <label>iomanip</label>
+      </node>
+      <node id="700">
+        <label>NFQueue.h</label>
+        <link refid="_n_f_queue_8h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>iterator</label>
+      </node>
+      <node id="714">
+        <label>pcap.h</label>
+      </node>
+      <node id="674">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="671">
+        <label>boost/log/core.hpp</label>
+      </node>
+      <node id="694">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="677">
+        <label>boost/asio/io_service.hpp</label>
+      </node>
+      <node id="681">
+        <label>cassert</label>
+      </node>
+      <node id="690">
+        <label>flows/Flow.h</label>
+        <link refid="_flow_8h"/>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+      <node id="712">
+        <label>pattern/Scanner.h</label>
+        <link refid="_scanner_8h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="713" relation="include">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>string</label>
+      </node>
+      <node id="687">
+        <label>radix_tree_node.hpp</label>
+        <link refid="radix__tree__node_8hpp"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>/home/xshell/git/RehtSe/src/UserInterface.cpp</label>
+        <link refid="UserInterface.cpp"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>map</label>
+      </node>
+      <node id="678">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="711">
+        <label>libnetfilter_queue/libnetfilter_queue_ipv4.h</label>
+      </node>
+      <node id="708">
+        <label>linux/netfilter.h</label>
+      </node>
+      <node id="672">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="709">
+        <label>libnetfilter_queue/libnetfilter_queue.h</label>
+      </node>
+      <node id="669">
+        <label>fstream</label>
+      </node>
+      <node id="680">
+        <label>radix_tree.hpp</label>
+        <link refid="radix__tree_8hpp"/>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>boost/log/expressions.hpp</label>
+      </node>
+      <node id="697">
+        <label>net/if_arp.h</label>
+      </node>
+      <node id="670">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="698">
+        <label>netinet/if_ether.h</label>
+      </node>
+      <node id="685">
+        <label>radix_tree_it.hpp</label>
+        <link refid="radix__tree__it_8hpp"/>
+        <childnode refid="686" relation="include">
+        </childnode>
+      </node>
+      <node id="707">
+        <label>crafter/Utils/TCPConnection.h</label>
+      </node>
+      <node id="676">
+        <label>boost/property_tree/json_parser.hpp</label>
+      </node>
+      <node id="684">
+        <label>vector</label>
+      </node>
+      <node id="713">
+        <label>pattern/Pattern.h</label>
+        <link refid="_pattern_8h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>flows/FlowTracker.h</label>
+        <link refid="_flow_tracker_8h"/>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="683">
+        <label>utility</label>
+      </node>
+      <node id="710">
+        <label>libnfnetlink/libnfnetlink.h</label>
+      </node>
+      <node id="703">
+        <label>time.h</label>
+      </node>
+      <node id="704">
+        <label>cstdlib</label>
+      </node>
+      <node id="675">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="667">
+        <label>iostream</label>
+      </node>
+      <node id="668">
+        <label>cstddef</label>
+      </node>
+      <node id="696">
+        <label>net/ethernet.h</label>
+      </node>
+      <node id="693">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="699">
+        <label>boost/regex.hpp</label>
+      </node>
+      <node id="692">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>set</label>
+      </node>
+      <node id="715">
+        <label>err.h</label>
+        <link refid="err_8h"/>
+      </node>
+      <node id="679">
+        <label>crafter.h</label>
+      </node>
+      <node id="706">
+        <label>linux/if_ether.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016,<sp/>José<sp/>María<sp/>Foces<sp/>Vivancos</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;organization&gt;<sp/>nor<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>ESTEBAN<sp/>PELLEGRINO<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_user_interface_8h" kindref="compound">UserInterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_user_interface_1ae6fb70370701b3bd6120e923df9705b0" refkind="member"><highlight class="normal"><ref refid="class_user_interface_1ae6fb70370701b3bd6120e923df9705b0" kindref="member">UserInterface::UserInterface</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_interface_1a66e0842cd0c15c03162bdbb4b1a8583b" kindref="member">init_logging</ref>(boost::log::trivial::trace);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_user_interface_1ae588b2ff1711a016dd4c6fc5002c0841" refkind="member"><highlight class="normal"><ref refid="class_user_interface_1ae588b2ff1711a016dd4c6fc5002c0841" kindref="member">UserInterface::~UserInterface</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_user_interface_1a66e0842cd0c15c03162bdbb4b1a8583b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_interface_1a66e0842cd0c15c03162bdbb4b1a8583b" kindref="member">UserInterface::init_logging</ref>(boost::log::trivial::severity_level<sp/>severity)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::log::core::get()-&gt;set_filter</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::log::trivial::severity<sp/>&gt;=<sp/>severity</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_user_interface_1a79350878c72585ae34e4321613ed2c1a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_interface_1a79350878c72585ae34e4321613ed2c1a" kindref="member">UserInterface::start</ref>(){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Do<sp/>necessary<sp/>init<sp/>functions<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>Crafter::InitCrafter();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48" refid="class_user_interface_1aed9ff11dad1ecd1611498771b63bc47d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_interface_1aed9ff11dad1ecd1611498771b63bc47d" kindref="member">UserInterface::quit</ref>(){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//RELEASE<sp/>everything<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>scanner;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>Crafter::CleanCrafter();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54" refid="class_user_interface_1a6d8d6d6b6900823be51259efba78b400" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_interface_1a6d8d6d6b6900823be51259efba78b400" kindref="member">UserInterface::run</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_interface_1a79350878c72585ae34e4321613ed2c1a" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>config(</highlight><highlight class="stringliteral">&quot;./config.json&quot;</highlight><highlight class="normal">,std::ios_base::in);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>scanner<sp/>=<sp/><ref refid="class_scanner_1aabbf46ef845aaefa4acb276874c259aa" kindref="member">Scanner::instance</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config.fail()<sp/>!=<sp/>0){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;./config.json<sp/>not<sp/>found!<sp/>Bye!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::property_tree::ptree<sp/>pt;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::property_tree::read_json(config,<sp/>pt);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::property_tree::ptree<sp/>log_level<sp/>=<sp/>pt.get_child(<ref refid="misc_8h_1a9f3835402fa4cd5cf9e8a893dd2ad50d" kindref="member">CONF_KEY_LOGLEVEL</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::log::trivial::severity_level<sp/>requested_log_level<sp/>=<sp/>(boost::log::trivial::severity_level)std::stoi(log_level.data());</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Log<sp/>Level<sp/>set<sp/>TO:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>requested_log_level;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_user_interface_1a66e0842cd0c15c03162bdbb4b1a8583b" kindref="member">init_logging</ref>(requested_log_level);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_FOREACH(boost::property_tree::ptree::value_type<sp/>&amp;v,<sp/>pt.get_child(<ref refid="misc_8h_1a3ce1abda25fbb8efa77515b68792409c" kindref="member">CONF_KEY_PATTERNS</ref>))</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scanner-&gt;<ref refid="class_scanner_1a7f499bfae5616f46bf36ae95733e148b" kindref="member">add_pattern</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_pattern" kindref="compound">Pattern</ref>(v.second));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_n_f_queue" kindref="compound">NFQueue</ref><sp/>nf(&amp;ios);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>nf.<ref refid="class_n_f_queue_1af92f81186532c755361d278f423d4bfb" kindref="member">async_process_netfilterqueue_packet</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>ios.run();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/xshell/git/RehtSe/src/UserInterface.cpp"/>
+  </compounddef>
+</doxygen>

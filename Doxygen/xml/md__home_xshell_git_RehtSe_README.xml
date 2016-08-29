@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md__home_xshell_git_RehtSe_README" kind="page">
+    <compoundname>md__home_xshell_git_RehtSe_README</compoundname>
+    <title>Rehtse</title>
+    <detaileddescription>
+<para>br_netfilter+Iptables+NFQueue+BPF+Regex <mdash/>&gt; Easy way to modify network packets on the fly!</para><para>Thanks to:</para><para><ulink url="https://github.com/pellegre/libcrafter">https://github.com/pellegre/libcrafter</ulink> <ulink url="https://github.com/ytakano/radix_tree">https://github.com/ytakano/radix_tree</ulink></para><para>Both of them maid things to work here.</para><para>You will need: <verbatim>apt-get install libboost-all-dev libnetfilter-queue1 libnetfilter-queue-dev libpcap0.8 libpcap0.8-dev
+Follow instructions to install libcrafter. 
+</verbatim></para><para>To use it: <verbatim>1 cd Debug; make clean; make all;
+2 edit your config.json file. Take a look at Debug/config.json for an example.
+3 write your iptables rule to dispatch packets to Rehtse -&gt; iptables -A FORWARD -j NFQUEUE --queue-num 0.
+4 just ./RehtSe
+</verbatim></para><para>The project works now on Eclipse Neon. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

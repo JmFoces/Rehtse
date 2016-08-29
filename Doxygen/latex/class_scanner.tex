@@ -1,0 +1,96 @@
+\hypertarget{class_scanner}{}\section{Scanner Class Reference}
+\label{class_scanner}\index{Scanner@{Scanner}}
+
+
+{\ttfamily \#include $<$Scanner.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_scanner_a39f85e20f3ca942fd0a8e4bce88c27c7}{$\sim$\+Scanner} ()
+\item 
+void \hyperlink{class_scanner_a7f499bfae5616f46bf36ae95733e148b}{add\+\_\+pattern} (\hyperlink{class_pattern}{Pattern} $\ast$)
+\item 
+\hyperlink{class_pattern}{Pattern} $\ast$ \hyperlink{class_scanner_af76096b5e594d931aca6b86d49d80e5c}{check} (Crafter\+::\+Packet $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_scanner}{Scanner} $\ast$ \hyperlink{class_scanner_aabbf46ef845aaefa4acb276874c259aa}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Scanner.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Scanner@{Scanner}!````~Scanner@{$\sim$\+Scanner}}
+\index{````~Scanner@{$\sim$\+Scanner}!Scanner@{Scanner}}
+\subsubsection[{\texorpdfstring{$\sim$\+Scanner()}{~Scanner()}}]{\setlength{\rightskip}{0pt plus 5cm}Scanner\+::$\sim$\+Scanner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_scanner_a39f85e20f3ca942fd0a8e4bce88c27c7}{}\label{class_scanner_a39f85e20f3ca942fd0a8e4bce88c27c7}
+Releases all patterns in the list, and clean the list. 
+
+Definition at line 55 of file Scanner.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Scanner@{Scanner}!add\+\_\+pattern@{add\+\_\+pattern}}
+\index{add\+\_\+pattern@{add\+\_\+pattern}!Scanner@{Scanner}}
+\subsubsection[{\texorpdfstring{add\+\_\+pattern(\+Pattern $\ast$)}{add_pattern(Pattern *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scanner\+::add\+\_\+pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf Pattern} $\ast$}]{pattern}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scanner_a7f499bfae5616f46bf36ae95733e148b}{}\label{class_scanner_a7f499bfae5616f46bf36ae95733e148b}
+Adds a pattern at the end of the list. 
+\begin{DoxyParams}{Parameters}
+{\em Pattern$\ast$} & to check packets against. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Scanner.\+cpp.
+
+\index{Scanner@{Scanner}!check@{check}}
+\index{check@{check}!Scanner@{Scanner}}
+\subsubsection[{\texorpdfstring{check(\+Crafter\+::\+Packet $\ast$)}{check(Crafter::Packet *)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pattern} $\ast$ Scanner\+::check (
+\begin{DoxyParamCaption}
+\item[{Crafter\+::\+Packet $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}\hypertarget{class_scanner_af76096b5e594d931aca6b86d49d80e5c}{}\label{class_scanner_af76096b5e594d931aca6b86d49d80e5c}
+Check if packet matches with any of the patterns contained in the list. If any patterns matches it stops searching and returns this pattern. The patterns are evaluated considering insertion order. 
+\begin{DoxyParams}{Parameters}
+{\em Crafter\+::\+Packet$\ast$} & to be checked. It modifies if packet matches any pattern. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Scanner.\+cpp.
+
+\index{Scanner@{Scanner}!instance@{instance}}
+\index{instance@{instance}!Scanner@{Scanner}}
+\subsubsection[{\texorpdfstring{instance()}{instance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scanner} $\ast$ Scanner\+::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_scanner_aabbf46ef845aaefa4acb276874c259aa}{}\label{class_scanner_aabbf46ef845aaefa4acb276874c259aa}
+Class to perform operations with a set of patterns. Singleton. It\textquotesingle{}s thought to be a manager for this set of patterns allowing to perform dynamic operations over it create/destroy/modify patterns live. The main function now is to check if a packet matches with any pattern in the set. Singleton stuff. \begin{DoxyReturn}{Returns}
+the unique instance of this class. 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Scanner.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/xshell/git/\+Reht\+Se/include/pattern/\hyperlink{_scanner_8h}{Scanner.\+h}\item 
+/home/xshell/git/\+Reht\+Se/src/pattern/\hyperlink{_scanner_8cpp}{Scanner.\+cpp}\end{DoxyCompactItemize}

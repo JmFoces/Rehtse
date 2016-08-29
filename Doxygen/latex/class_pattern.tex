@@ -1,0 +1,138 @@
+\hypertarget{class_pattern}{}\section{Pattern Class Reference}
+\label{class_pattern}\index{Pattern@{Pattern}}
+
+
+{\ttfamily \#include $<$Pattern.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pattern_a7d6f58ea6e73e4b79a7f722a59ce64af}{Pattern} (std\+::string, std\+::string, std\+::string, std\+::string)
+\item 
+\hyperlink{class_pattern_ae0acce75099bf7776feab7d86f34e21f}{Pattern} (boost\+::property\+\_\+tree\+::ptree)
+\item 
+bool \hyperlink{class_pattern_a9b89524b05dc9430bd479928d4c08a4d}{check} (Crafter\+::\+Packet $\ast$)
+\item 
+virtual \hyperlink{class_pattern_a6e8b9388bbd39934e9f9534b974d7498}{$\sim$\+Pattern} ()
+\item 
+std\+::string \hyperlink{class_pattern_af1563aeb5e7bb378e810267da623906e}{print} ()
+\item 
+int32\+\_\+t \hyperlink{class_pattern_ac18d670fe54682f7fc6e3da229988ca0}{apply\+Replacement} (Crafter\+::\+Layer $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 38 of file Pattern.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pattern@{Pattern}!Pattern@{Pattern}}
+\index{Pattern@{Pattern}!Pattern@{Pattern}}
+\subsubsection[{\texorpdfstring{Pattern(std\+::string, std\+::string, std\+::string, std\+::string)}{Pattern(std::string, std::string, std::string, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}Pattern\+::\+Pattern (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{bpf, }
+\item[{std\+::string}]{regex, }
+\item[{std\+::string}]{replacement\+\_\+regex, }
+\item[{std\+::string}]{raw\+\_\+replacement}
+\end{DoxyParamCaption}
+)}\hypertarget{class_pattern_a7d6f58ea6e73e4b79a7f722a59ce64af}{}\label{class_pattern_a7d6f58ea6e73e4b79a7f722a59ce64af}
+Class that implements a \hyperlink{class_pattern}{Pattern}. A pattern is composed by\+: B\+PF filter Regex Plus some replacement stuff that fits the operations for what this program is thought to be. Replacement is composed by a regex and a replacement string. Constructs a pattern from\+: bpf\+\_\+string(bpf), regex(regex), replacement\+\_\+regex(replacement\+\_\+regex), raw\+\_\+replacement(raw\+\_\+replacement) It compiles the bpf program and regex. Raises\+: B\+P\+F\+\_\+\+E\+RR if cannot compile the filter. 
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & bpf filter string. \\
+\hline
+{\em std\+::string} & regex to match packets against \\
+\hline
+{\em std\+::string} & regex to replace content \\
+\hline
+{\em std\+::string} & replacement string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Pattern.\+cpp.
+
+\index{Pattern@{Pattern}!Pattern@{Pattern}}
+\index{Pattern@{Pattern}!Pattern@{Pattern}}
+\subsubsection[{\texorpdfstring{Pattern(boost\+::property\+\_\+tree\+::ptree)}{Pattern(boost::property_tree::ptree)}}]{\setlength{\rightskip}{0pt plus 5cm}Pattern\+::\+Pattern (
+\begin{DoxyParamCaption}
+\item[{boost\+::property\+\_\+tree\+::ptree}]{ptree}
+\end{DoxyParamCaption}
+)}\hypertarget{class_pattern_ae0acce75099bf7776feab7d86f34e21f}{}\label{class_pattern_ae0acce75099bf7776feab7d86f34e21f}
+Constructs a pattern from ptree (directly from config file). It compiles the bpf program and regex. Raises\+: B\+P\+F\+\_\+\+E\+RR if cannot compile the filter. 
+\begin{DoxyParams}{Parameters}
+{\em boost\+::property\+\_\+tree\+::ptree} & to create the object from. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file Pattern.\+cpp.
+
+\index{Pattern@{Pattern}!````~Pattern@{$\sim$\+Pattern}}
+\index{````~Pattern@{$\sim$\+Pattern}!Pattern@{Pattern}}
+\subsubsection[{\texorpdfstring{$\sim$\+Pattern()}{~Pattern()}}]{\setlength{\rightskip}{0pt plus 5cm}Pattern\+::$\sim$\+Pattern (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_pattern_a6e8b9388bbd39934e9f9534b974d7498}{}\label{class_pattern_a6e8b9388bbd39934e9f9534b974d7498}
+
+
+Definition at line 56 of file Pattern.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Pattern@{Pattern}!apply\+Replacement@{apply\+Replacement}}
+\index{apply\+Replacement@{apply\+Replacement}!Pattern@{Pattern}}
+\subsubsection[{\texorpdfstring{apply\+Replacement(\+Crafter\+::\+Layer $\ast$)}{applyReplacement(Crafter::Layer *)}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Pattern\+::apply\+Replacement (
+\begin{DoxyParamCaption}
+\item[{Crafter\+::\+Layer $\ast$}]{layer}
+\end{DoxyParamCaption}
+)}\hypertarget{class_pattern_ac18d670fe54682f7fc6e3da229988ca0}{}\label{class_pattern_ac18d670fe54682f7fc6e3da229988ca0}
+Apply replacement regex over the given layer. 
+\begin{DoxyParams}{Parameters}
+{\em Crafter\+::\+Layer} & $\ast$ over what the replacement will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int32\+\_\+t meaning the bytes balance\+: $>$0 if added data $<$0 if replaced data is smaller than the provided one 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Pattern.\+cpp.
+
+\index{Pattern@{Pattern}!check@{check}}
+\index{check@{check}!Pattern@{Pattern}}
+\subsubsection[{\texorpdfstring{check(\+Crafter\+::\+Packet $\ast$)}{check(Crafter::Packet *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pattern\+::check (
+\begin{DoxyParamCaption}
+\item[{Crafter\+::\+Packet $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}\hypertarget{class_pattern_a9b89524b05dc9430bd479928d4c08a4d}{}\label{class_pattern_a9b89524b05dc9430bd479928d4c08a4d}
+Checks if the packet matches the given B\+PF program and regex. 
+\begin{DoxyParams}{Parameters}
+{\em Crafter\+::\+Packet} & $\ast$ to be checked for matching this pattern. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Pattern.\+cpp.
+
+\index{Pattern@{Pattern}!print@{print}}
+\index{print@{print}!Pattern@{Pattern}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Pattern\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_pattern_af1563aeb5e7bb378e810267da623906e}{}\label{class_pattern_af1563aeb5e7bb378e810267da623906e}
+Writes printable parts of itself to a string. 
+
+Definition at line 81 of file Pattern.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/xshell/git/\+Reht\+Se/include/pattern/\hyperlink{_pattern_8h}{Pattern.\+h}\item 
+/home/xshell/git/\+Reht\+Se/src/pattern/\hyperlink{_pattern_8cpp}{Pattern.\+cpp}\end{DoxyCompactItemize}

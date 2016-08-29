@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_n_f_queue_8h" kind="file" language="C++">
+    <compoundname>NFQueue.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">list</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">netinet/in.h</includes>
+    <includes local="no">linux/if_ether.h</includes>
+    <includes local="no">boost/log/core.hpp</includes>
+    <includes local="no">boost/log/trivial.hpp</includes>
+    <includes local="no">boost/log/expressions.hpp</includes>
+    <includes refid="misc_8h" local="no">misc.h</includes>
+    <includes local="no">crafter.h</includes>
+    <includes local="no">crafter/Utils/TCPConnection.h</includes>
+    <includes refid="_flow_tracker_8h" local="no">flows/FlowTracker.h</includes>
+    <includes local="no">boost/regex.hpp</includes>
+    <includes local="no">linux/netfilter.h</includes>
+    <includes local="no">libnetfilter_queue/libnetfilter_queue.h</includes>
+    <includes local="no">libnfnetlink/libnfnetlink.h</includes>
+    <includes local="no">libnetfilter_queue/libnetfilter_queue_ipv4.h</includes>
+    <includes local="no">boost/asio.hpp</includes>
+    <includedby refid="_user_interface_8h" local="no">/home/xshell/git/RehtSe/include/UserInterface.h</includedby>
+    <includedby refid="_n_f_queue_8cpp" local="yes">/home/xshell/git/RehtSe/src/NFQueue.cpp</includedby>
+    <incdepgraph>
+      <node id="192">
+        <label>list</label>
+      </node>
+      <node id="196">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="222">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="193">
+        <label>iomanip</label>
+      </node>
+      <node id="190">
+        <label>/home/xshell/git/RehtSe/include/NFQueue.h</label>
+        <link refid="NFQueue.h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>iterator</label>
+      </node>
+      <node id="198">
+        <label>boost/log/core.hpp</label>
+      </node>
+      <node id="204">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="215">
+        <label>cassert</label>
+      </node>
+      <node id="221">
+        <label>flows/Flow.h</label>
+        <link refid="_flow_8h"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>string</label>
+      </node>
+      <node id="220">
+        <label>radix_tree_node.hpp</label>
+        <link refid="radix__tree__node_8hpp"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>map</label>
+      </node>
+      <node id="227">
+        <label>libnetfilter_queue/libnetfilter_queue_ipv4.h</label>
+      </node>
+      <node id="224">
+        <label>linux/netfilter.h</label>
+      </node>
+      <node id="199">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="225">
+        <label>libnetfilter_queue/libnetfilter_queue.h</label>
+      </node>
+      <node id="214">
+        <label>radix_tree.hpp</label>
+        <link refid="radix__tree_8hpp"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>boost/log/expressions.hpp</label>
+      </node>
+      <node id="209">
+        <label>net/if_arp.h</label>
+      </node>
+      <node id="202">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="210">
+        <label>netinet/if_ether.h</label>
+      </node>
+      <node id="218">
+        <label>radix_tree_it.hpp</label>
+        <link refid="radix__tree__it_8hpp"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>crafter/Utils/TCPConnection.h</label>
+      </node>
+      <node id="217">
+        <label>vector</label>
+      </node>
+      <node id="213">
+        <label>flows/FlowTracker.h</label>
+        <link refid="_flow_tracker_8h"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>utility</label>
+      </node>
+      <node id="226">
+        <label>libnfnetlink/libnfnetlink.h</label>
+      </node>
+      <node id="194">
+        <label>time.h</label>
+      </node>
+      <node id="195">
+        <label>cstdlib</label>
+      </node>
+      <node id="191">
+        <label>iostream</label>
+      </node>
+      <node id="208">
+        <label>net/ethernet.h</label>
+      </node>
+      <node id="203">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="223">
+        <label>boost/regex.hpp</label>
+      </node>
+      <node id="201">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>set</label>
+      </node>
+      <node id="211">
+        <label>crafter.h</label>
+      </node>
+      <node id="197">
+        <label>linux/if_ether.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="229">
+        <label>/home/xshell/git/RehtSe/include/UserInterface.h</label>
+        <link refid="_user_interface_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>/home/xshell/git/RehtSe/include/NFQueue.h</label>
+        <link refid="NFQueue.h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>/home/xshell/git/RehtSe/src/UserInterface.cpp</label>
+        <link refid="_user_interface_8cpp"/>
+      </node>
+      <node id="230">
+        <label>/home/xshell/git/RehtSe/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="232">
+        <label>/home/xshell/git/RehtSe/src/NFQueue.cpp</label>
+        <link refid="_n_f_queue_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnfq__data" prot="public">nfq_data</innerclass>
+    <innerclass refid="class_n_f_queue" prot="public">NFQueue</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_n_f_queue_8h_1addbc3fe261c77f344ddeecb3d2a209f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int qpacket</definition>
+        <argsstring>(struct nfq_q_handle *, struct nfgenmsg *, struct nfq_data *, void *)</argsstring>
+        <name>qpacket</name>
+        <param>
+          <type>struct nfq_q_handle *</type>
+        </param>
+        <param>
+          <type>struct nfgenmsg *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structnfq__data" kindref="compound">nfq_data</ref> *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/NFQueue.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>NFQueue.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Jul<sp/>19,<sp/>2016</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>xshell</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NFQUEUE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NFQUEUE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;netinet/in.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;linux/if_ether.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/core.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/trivial.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/expressions.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="misc_8h" kindref="compound">misc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;crafter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;crafter/Utils/TCPConnection.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_flow_tracker_8h" kindref="compound">flows/FlowTracker.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/regex.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;linux/netfilter.h&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Defines<sp/>verdicts<sp/>(NF_ACCEPT,<sp/>etc)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;libnetfilter_queue/libnetfilter_queue.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;libnfnetlink/libnfnetlink.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;libnetfilter_queue/libnetfilter_queue_ipv4.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structnfq__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnfq__data" kindref="compound">nfq_data</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="structnfq__data_1ac44f5e55ab31da6358aed4691f76a646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">nfattr<sp/>**<ref refid="structnfq__data_1ac44f5e55ab31da6358aed4691f76a646" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qpacket(<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>nfq_q_handle<sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>nfgenmsg<sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnfq__data" kindref="compound">nfq_data</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_n_f_queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_n_f_queue" kindref="compound">NFQueue</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="class_n_f_queue_1acebef7ff7290fbadb7fd04ff3075130c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::asio::io_service<sp/>*<ref refid="class_n_f_queue_1acebef7ff7290fbadb7fd04ff3075130c" kindref="member">ios</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_n_f_queue" kindref="compound">NFQueue</ref>(boost::asio::io_service*);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_n_f_queue" kindref="compound">NFQueue</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>async_process_netfilterqueue_packet();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">nfq_handle<sp/>*nfqHandle<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">nfq_q_handle<sp/>*myQueue<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">nfnl_handle<sp/>*netlinkHandle<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::asio::posix::stream_descriptor<sp/>netfilterqueue_stream;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[4096]<sp/>__attribute__<sp/>((aligned));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>NFQUEUE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/xshell/git/RehtSe/include/NFQueue.h"/>
+  </compounddef>
+</doxygen>

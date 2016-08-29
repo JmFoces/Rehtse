@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c1b34ce803b9ec9cfb04e9fc6c37f0fa" kind="dir">
+    <compoundname>/home/xshell/git/RehtSe/src/pattern</compoundname>
+    <innerfile refid="_pattern_8cpp">Pattern.cpp</innerfile>
+    <innerfile refid="_scanner_8cpp">Scanner.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/xshell/git/RehtSe/src/pattern/"/>
+  </compounddef>
+</doxygen>

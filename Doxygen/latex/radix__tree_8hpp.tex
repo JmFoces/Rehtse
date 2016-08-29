@@ -1,0 +1,91 @@
+\hypertarget{radix__tree_8hpp}{}\section{/home/xshell/git/\+Reht\+Se/include/radix\+\_\+tree.hpp File Reference}
+\label{radix__tree_8hpp}\index{/home/xshell/git/\+Reht\+Se/include/radix\+\_\+tree.\+hpp@{/home/xshell/git/\+Reht\+Se/include/radix\+\_\+tree.\+hpp}}
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}radix\+\_\+tree\+\_\+it.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}radix\+\_\+tree\+\_\+node.\+hpp\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classradix__tree}{radix\+\_\+tree$<$ K, T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename K $>$ }\\K \hyperlink{radix__tree_8hpp_a0da9917b249b72630281a390c624ffdf}{radix\+\_\+substr} (const K \&key, int begin, int num)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::string \hyperlink{radix__tree_8hpp_a52e97a2393f0501d22bee9d7055ba62b}{radix\+\_\+substr$<$ std\+::string $>$} (const std\+::string \&key, int begin, int num)
+\item 
+{\footnotesize template$<$typename K $>$ }\\K \hyperlink{radix__tree_8hpp_a6f3470047bb909a755d9c99fcc97fab5}{radix\+\_\+join} (const K \&key1, const K \&key2)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::string \hyperlink{radix__tree_8hpp_a78977b52504471dd8bc470f666fb83e9}{radix\+\_\+join$<$ std\+::string $>$} (const std\+::string \&key1, const std\+::string \&key2)
+\item 
+{\footnotesize template$<$typename K $>$ }\\int \hyperlink{radix__tree_8hpp_a970b86fa7ee4c36bb1c1895c24b9a218}{radix\+\_\+length} (const K \&key)
+\item 
+{\footnotesize template$<$$>$ }\\int \hyperlink{radix__tree_8hpp_a1beb7f6a3f758b93834f1fabaed3a135}{radix\+\_\+length$<$ std\+::string $>$} (const std\+::string \&key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}!radix\+\_\+join@{radix\+\_\+join}}
+\index{radix\+\_\+join@{radix\+\_\+join}!radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}}
+\subsubsection[{\texorpdfstring{radix\+\_\+join(const K \&key1, const K \&key2)}{radix_join(const K &key1, const K &key2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K $>$ K radix\+\_\+join (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key1, }
+\item[{const K \&}]{key2}
+\end{DoxyParamCaption}
+)}\hypertarget{radix__tree_8hpp_a6f3470047bb909a755d9c99fcc97fab5}{}\label{radix__tree_8hpp_a6f3470047bb909a755d9c99fcc97fab5}
+\index{radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}!radix\+\_\+join$<$ std\+::string $>$@{radix\+\_\+join$<$ std\+::string $>$}}
+\index{radix\+\_\+join$<$ std\+::string $>$@{radix\+\_\+join$<$ std\+::string $>$}!radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}}
+\subsubsection[{\texorpdfstring{radix\+\_\+join$<$ std\+::string $>$(const std\+::string \&key1, const std\+::string \&key2)}{radix_join< std::string >(const std::string &key1, const std::string &key2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ std\+::string {\bf radix\+\_\+join}$<$ std\+::string $>$ (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key1, }
+\item[{const std\+::string \&}]{key2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{radix__tree_8hpp_a78977b52504471dd8bc470f666fb83e9}{}\label{radix__tree_8hpp_a78977b52504471dd8bc470f666fb83e9}
+
+
+Definition at line 25 of file radix\+\_\+tree.\+hpp.
+
+\index{radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}!radix\+\_\+length@{radix\+\_\+length}}
+\index{radix\+\_\+length@{radix\+\_\+length}!radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}}
+\subsubsection[{\texorpdfstring{radix\+\_\+length(const K \&key)}{radix_length(const K &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K $>$ int radix\+\_\+length (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{radix__tree_8hpp_a970b86fa7ee4c36bb1c1895c24b9a218}{}\label{radix__tree_8hpp_a970b86fa7ee4c36bb1c1895c24b9a218}
+\index{radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}!radix\+\_\+length$<$ std\+::string $>$@{radix\+\_\+length$<$ std\+::string $>$}}
+\index{radix\+\_\+length$<$ std\+::string $>$@{radix\+\_\+length$<$ std\+::string $>$}!radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}}
+\subsubsection[{\texorpdfstring{radix\+\_\+length$<$ std\+::string $>$(const std\+::string \&key)}{radix_length< std::string >(const std::string &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ int {\bf radix\+\_\+length}$<$ std\+::string $>$ (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{radix__tree_8hpp_a1beb7f6a3f758b93834f1fabaed3a135}{}\label{radix__tree_8hpp_a1beb7f6a3f758b93834f1fabaed3a135}
+
+
+Definition at line 34 of file radix\+\_\+tree.\+hpp.
+
+\index{radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}!radix\+\_\+substr@{radix\+\_\+substr}}
+\index{radix\+\_\+substr@{radix\+\_\+substr}!radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}}
+\subsubsection[{\texorpdfstring{radix\+\_\+substr(const K \&key, int begin, int num)}{radix_substr(const K &key, int begin, int num)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K $>$ K radix\+\_\+substr (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key, }
+\item[{int}]{begin, }
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{radix__tree_8hpp_a0da9917b249b72630281a390c624ffdf}{}\label{radix__tree_8hpp_a0da9917b249b72630281a390c624ffdf}
+\index{radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}!radix\+\_\+substr$<$ std\+::string $>$@{radix\+\_\+substr$<$ std\+::string $>$}}
+\index{radix\+\_\+substr$<$ std\+::string $>$@{radix\+\_\+substr$<$ std\+::string $>$}!radix\+\_\+tree.\+hpp@{radix\+\_\+tree.\+hpp}}
+\subsubsection[{\texorpdfstring{radix\+\_\+substr$<$ std\+::string $>$(const std\+::string \&key, int begin, int num)}{radix_substr< std::string >(const std::string &key, int begin, int num)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ std\+::string {\bf radix\+\_\+substr}$<$ std\+::string $>$ (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{int}]{begin, }
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{radix__tree_8hpp_a52e97a2393f0501d22bee9d7055ba62b}{}\label{radix__tree_8hpp_a52e97a2393f0501d22bee9d7055ba62b}
+
+
+Definition at line 16 of file radix\+\_\+tree.\+hpp.
+

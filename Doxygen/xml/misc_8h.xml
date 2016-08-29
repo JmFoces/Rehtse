@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="misc_8h" kind="file" language="C++">
+    <compoundname>misc.h</compoundname>
+    <includes local="no">boost/asio.hpp</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">boost/format.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">set</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes local="no">net/ethernet.h</includes>
+    <includes local="no">net/if_arp.h</includes>
+    <includes local="no">netinet/if_ether.h</includes>
+    <includedby refid="_flow_8h" local="no">/home/xshell/git/RehtSe/include/flows/Flow.h</includedby>
+    <includedby refid="_flow_tracker_8h" local="no">/home/xshell/git/RehtSe/include/flows/FlowTracker.h</includedby>
+    <includedby refid="_n_f_queue_8h" local="no">/home/xshell/git/RehtSe/include/NFQueue.h</includedby>
+    <includedby refid="_pattern_8h" local="no">/home/xshell/git/RehtSe/include/pattern/Pattern.h</includedby>
+    <includedby refid="misc_8cpp" local="no">/home/xshell/git/RehtSe/src/misc.cpp</includedby>
+    <incdepgraph>
+      <node id="163">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="167">
+        <label>string</label>
+      </node>
+      <node id="166">
+        <label>map</label>
+      </node>
+      <node id="169">
+        <label>net/if_arp.h</label>
+      </node>
+      <node id="161">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="170">
+        <label>netinet/if_ether.h</label>
+      </node>
+      <node id="164">
+        <label>iostream</label>
+      </node>
+      <node id="168">
+        <label>net/ethernet.h</label>
+      </node>
+      <node id="162">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="160">
+        <label>/home/xshell/git/RehtSe/include/misc.h</label>
+        <link refid="misc.h"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="187">
+        <label>/home/xshell/git/RehtSe/src/pattern/Scanner.cpp</label>
+        <link refid="_scanner_8cpp"/>
+      </node>
+      <node id="175">
+        <label>/home/xshell/git/RehtSe/include/UserInterface.h</label>
+        <link refid="_user_interface_8h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>/home/xshell/git/RehtSe/src/misc.cpp</label>
+        <link refid="misc_8cpp"/>
+      </node>
+      <node id="174">
+        <label>/home/xshell/git/RehtSe/include/NFQueue.h</label>
+        <link refid="_n_f_queue_8h"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>/home/xshell/git/RehtSe/src/flows/Flow.cpp</label>
+        <link refid="_flow_8cpp"/>
+      </node>
+      <node id="172">
+        <label>/home/xshell/git/RehtSe/include/flows/Flow.h</label>
+        <link refid="_flow_8h"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>/home/xshell/git/RehtSe/src/flows/TCPFlow.cpp</label>
+        <link refid="_t_c_p_flow_8cpp"/>
+      </node>
+      <node id="186">
+        <label>/home/xshell/git/RehtSe/include/pattern/Scanner.h</label>
+        <link refid="_scanner_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>/home/xshell/git/RehtSe/src/UserInterface.cpp</label>
+        <link refid="_user_interface_8cpp"/>
+      </node>
+      <node id="183">
+        <label>/home/xshell/git/RehtSe/include/flows/TCPFlow.h</label>
+        <link refid="_t_c_p_flow_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>/home/xshell/git/RehtSe/src/pattern/Pattern.cpp</label>
+        <link refid="_pattern_8cpp"/>
+      </node>
+      <node id="185">
+        <label>/home/xshell/git/RehtSe/include/pattern/Pattern.h</label>
+        <link refid="_pattern_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>/home/xshell/git/RehtSe/include/flows/FlowTracker.h</label>
+        <link refid="_flow_tracker_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>/home/xshell/git/RehtSe/src/flows/FlowTracker.cpp</label>
+        <link refid="_flow_tracker_8cpp"/>
+      </node>
+      <node id="176">
+        <label>/home/xshell/git/RehtSe/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="182">
+        <label>/home/xshell/git/RehtSe/src/flows/GenericFlow.cpp</label>
+        <link refid="_generic_flow_8cpp"/>
+      </node>
+      <node id="178">
+        <label>/home/xshell/git/RehtSe/src/NFQueue.cpp</label>
+        <link refid="_n_f_queue_8cpp"/>
+      </node>
+      <node id="171">
+        <label>/home/xshell/git/RehtSe/include/misc.h</label>
+        <link refid="misc.h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>/home/xshell/git/RehtSe/include/flows/GenericFlow.h</label>
+        <link refid="_generic_flow_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="misc_8h_1adc9fcc1ff8224752ddf74b9e62adb44f" prot="public" static="no">
+        <name>_MISC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="28" column="9" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="misc_8h_1a588ff42749a655a5c2facfe521dee292" prot="public" static="no">
+        <type>boost::asio::generic::raw_protocol</type>
+        <definition>typedef boost::asio::generic::raw_protocol raw_protocol_t</definition>
+        <argsstring></argsstring>
+        <name>raw_protocol_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="48" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="misc_8h_1a8ecd3c4f6eb9ecceaef7d16699844e97" prot="public" static="no">
+        <type>boost::asio::generic::basic_endpoint&lt; <ref refid="misc_8h_1a588ff42749a655a5c2facfe521dee292" kindref="member">raw_protocol_t</ref> &gt;</type>
+        <definition>typedef boost::asio::generic::basic_endpoint&lt;raw_protocol_t&gt; raw_endpoint_t</definition>
+        <argsstring></argsstring>
+        <name>raw_endpoint_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="49" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="misc_8h_1a9f3835402fa4cd5cf9e8a893dd2ad50d" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_LOGLEVEL</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_LOGLEVEL</name>
+        <initializer>=&quot;debuglevel&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="41" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="misc_8h_1a3ce1abda25fbb8efa77515b68792409c" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_PATTERNS</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_PATTERNS</name>
+        <initializer>=&quot;patterns&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="42" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="misc_8h_1abee3879c3423745f91f3889639d58709" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_MATCH</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_MATCH</name>
+        <initializer>=&quot;match&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="43" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="misc_8h_1a78ae67eeac5f35df8960b4f2ec256cb8" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_MODIFY</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_MODIFY</name>
+        <initializer>=&quot;modify&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="44" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="misc_8h_1ab56c159876f6acd54ea5297d5a003c6d" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_REPLACEMENT</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_REPLACEMENT</name>
+        <initializer>=&quot;replacement&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="45" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="misc_8h_1abf3449c5c0efb6b896555f1e3e651d21" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_REGEX</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_REGEX</name>
+        <initializer>=&quot;regex&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="46" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="misc_8h_1a72f2f4f65d0b3d6110cf79a17359747e" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string CONF_KEY_BPF</definition>
+        <argsstring></argsstring>
+        <name>CONF_KEY_BPF</name>
+        <initializer>=&quot;bpf&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="47" column="1" bodyfile="/home/xshell/git/RehtSe/include/misc.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="misc_8h_1aee1c18572400116715202d5df122941d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string hexa_print</definition>
+        <argsstring>(const unsigned char *array, int lenght)</argsstring>
+        <name>hexa_print</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lenght</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Formats the array to hexadecimal. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char* </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string containing hexadecimal representation of the array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="57" column="1" bodyfile="/home/xshell/git/RehtSe/src/misc.cpp" bodystart="33" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1aa7e729572a36d0773255024fbc1076c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string hexa_print</definition>
+        <argsstring>(const char *array, int lenght)</argsstring>
+        <name>hexa_print</name>
+        <param>
+          <type>const char *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lenght</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Formats the array to hexadecimal. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char* </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string containing hexadecimal representation of the array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="64" column="1" bodyfile="/home/xshell/git/RehtSe/src/misc.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="misc_8h_1af14f80c6b321f2805138e03b832c9091" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool match_regex</definition>
+        <argsstring>(std::string target, boost::regex regex)</argsstring>
+        <name>match_regex</name>
+        <param>
+          <type>std::string</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>boost::regex</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks the given regex over the target and returns the result. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>std::string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target content to match against regex </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>boost::regex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>regex regex to apply </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if matches. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/xshell/git/RehtSe/include/misc.h" line="71" column="1" bodyfile="/home/xshell/git/RehtSe/src/misc.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016,<sp/>José<sp/>María<sp/>Foces<sp/>Vivancos</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;organization&gt;<sp/>nor<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>ESTEBAN<sp/>PELLEGRINO<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MISC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="misc_8h_1adc9fcc1ff8224752ddf74b9e62adb44f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MISC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/asio.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;net/ethernet.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;net/if_arp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;netinet/if_ether.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="misc_8h_1a9f3835402fa4cd5cf9e8a893dd2ad50d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1a9f3835402fa4cd5cf9e8a893dd2ad50d" kindref="member">CONF_KEY_LOGLEVEL</ref>=</highlight><highlight class="stringliteral">&quot;debuglevel&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42" refid="misc_8h_1a3ce1abda25fbb8efa77515b68792409c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1a3ce1abda25fbb8efa77515b68792409c" kindref="member">CONF_KEY_PATTERNS</ref>=</highlight><highlight class="stringliteral">&quot;patterns&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="misc_8h_1abee3879c3423745f91f3889639d58709" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1abee3879c3423745f91f3889639d58709" kindref="member">CONF_KEY_MATCH</ref>=</highlight><highlight class="stringliteral">&quot;match&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="misc_8h_1a78ae67eeac5f35df8960b4f2ec256cb8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1a78ae67eeac5f35df8960b4f2ec256cb8" kindref="member">CONF_KEY_MODIFY</ref>=</highlight><highlight class="stringliteral">&quot;modify&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45" refid="misc_8h_1ab56c159876f6acd54ea5297d5a003c6d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1ab56c159876f6acd54ea5297d5a003c6d" kindref="member">CONF_KEY_REPLACEMENT</ref>=</highlight><highlight class="stringliteral">&quot;replacement&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46" refid="misc_8h_1abf3449c5c0efb6b896555f1e3e651d21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1abf3449c5c0efb6b896555f1e3e651d21" kindref="member">CONF_KEY_REGEX</ref>=</highlight><highlight class="stringliteral">&quot;regex&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="misc_8h_1a72f2f4f65d0b3d6110cf79a17359747e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="misc_8h_1a72f2f4f65d0b3d6110cf79a17359747e" kindref="member">CONF_KEY_BPF</ref>=</highlight><highlight class="stringliteral">&quot;bpf&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="misc_8h_1a588ff42749a655a5c2facfe521dee292" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::asio::generic::raw_protocol<sp/><ref refid="misc_8h_1a588ff42749a655a5c2facfe521dee292" kindref="member">raw_protocol_t</ref>;</highlight></codeline>
+<codeline lineno="49" refid="misc_8h_1a8ecd3c4f6eb9ecceaef7d16699844e97" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::asio::generic::basic_endpoint&lt;raw_protocol_t&gt;<sp/><ref refid="misc_8h_1a8ecd3c4f6eb9ecceaef7d16699844e97" kindref="member">raw_endpoint_t</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">std::string<sp/><ref refid="misc_8h_1aee1c18572400116715202d5df122941d" kindref="member">hexa_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lenght);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">std::string<sp/><ref refid="misc_8h_1aee1c18572400116715202d5df122941d" kindref="member">hexa_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lenght);</highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="misc_8h_1af14f80c6b321f2805138e03b832c9091" kindref="member">match_regex</ref>(std::string<sp/>target,<sp/>boost::regex<sp/>regex);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/xshell/git/RehtSe/include/misc.h"/>
+  </compounddef>
+</doxygen>

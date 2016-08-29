@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_scanner_8cpp" kind="file" language="C++">
+    <compoundname>Scanner.cpp</compoundname>
+    <includes refid="_scanner_8h" local="no">pattern/Scanner.h</includes>
+    <incdepgraph>
+      <node id="641">
+        <label>/home/xshell/git/RehtSe/src/pattern/Scanner.cpp</label>
+        <link refid="Scanner.cpp"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>pcap.h</label>
+      </node>
+      <node id="647">
+        <label>boost/log/core.hpp</label>
+      </node>
+      <node id="657">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="642">
+        <label>pattern/Scanner.h</label>
+        <link refid="_scanner_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>string</label>
+      </node>
+      <node id="659">
+        <label>map</label>
+      </node>
+      <node id="648">
+        <label>boost/log/trivial.hpp</label>
+      </node>
+      <node id="649">
+        <label>boost/log/expressions.hpp</label>
+      </node>
+      <node id="661">
+        <label>net/if_arp.h</label>
+      </node>
+      <node id="655">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="662">
+        <label>netinet/if_ether.h</label>
+      </node>
+      <node id="644">
+        <label>pattern/Pattern.h</label>
+        <link refid="_pattern_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>boost/property_tree/ptree.hpp</label>
+      </node>
+      <node id="645">
+        <label>iostream</label>
+      </node>
+      <node id="643">
+        <label>cstddef</label>
+      </node>
+      <node id="660">
+        <label>net/ethernet.h</label>
+      </node>
+      <node id="656">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="651">
+        <label>boost/regex.hpp</label>
+      </node>
+      <node id="654">
+        <label>misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>set</label>
+      </node>
+      <node id="663">
+        <label>err.h</label>
+        <link refid="err_8h"/>
+      </node>
+      <node id="652">
+        <label>crafter.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016,<sp/>José<sp/>María<sp/>Foces<sp/>Vivancos</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;organization&gt;<sp/>nor<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>ESTEBAN<sp/>PELLEGRINO<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_scanner_8h" kindref="compound">pattern/Scanner.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="class_scanner" kindref="compound">Scanner</ref>*<sp/>Scanner::single_ptr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_scanner_1aabbf46ef845aaefa4acb276874c259aa" refkind="member"><highlight class="normal"><ref refid="class_scanner" kindref="compound">Scanner</ref>*<sp/><ref refid="class_scanner_1aabbf46ef845aaefa4acb276874c259aa" kindref="member">Scanner::instance</ref>(){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Scanner::single_ptr<sp/>==<sp/>NULL)<sp/>single_ptr<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_scanner" kindref="compound">Scanner</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>single_ptr;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_scanner_1a7f499bfae5616f46bf36ae95733e148b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_scanner_1a7f499bfae5616f46bf36ae95733e148b" kindref="member">Scanner::add_pattern</ref>(<ref refid="class_pattern" kindref="compound">Pattern</ref><sp/>*pattern){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>patterns.push_back(pattern);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_scanner_1af76096b5e594d931aca6b86d49d80e5c" refkind="member"><highlight class="normal"><ref refid="class_pattern" kindref="compound">Pattern</ref>*<sp/><ref refid="class_scanner_1af76096b5e594d931aca6b86d49d80e5c" kindref="member">Scanner::check</ref>(Crafter::Packet<sp/>*packet){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LOG_TRIVIAL(trace)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Scanner<sp/>checking<sp/>packet<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pattern" kindref="compound">Pattern</ref><sp/>*ptr<sp/>=NULL;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::list&lt;Pattern*&gt;::iterator<sp/>it<sp/>=<sp/>patterns.begin();<sp/>it<sp/>!=<sp/>patterns.end();it++){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*it)-&gt;check(packet))</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/>*it;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">Scanner::Scanner()<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_scanner_1a39f85e20f3ca942fd0a8e4bce88c27c7" refkind="member"><highlight class="normal"><ref refid="class_scanner_1a39f85e20f3ca942fd0a8e4bce88c27c7" kindref="member">Scanner::~Scanner</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//while(!patterns.empty())<sp/>delete<sp/>patterns.front(),<sp/>patterns.pop_front();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::list&lt;Pattern*&gt;::iterator<sp/>it<sp/>=<sp/>patterns.begin();<sp/>it<sp/>!=<sp/>patterns.end();it++){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>*it;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>patterns.clear();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/xshell/git/RehtSe/src/pattern/Scanner.cpp"/>
+  </compounddef>
+</doxygen>
