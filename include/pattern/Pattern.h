@@ -36,7 +36,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <misc.h>
 #include <err.h>
 class Pattern {
-	/*
+	/**
 	 * Class that implements a Pattern. A pattern is composed by:
 	 * 		BPF filter
 	 *	 	Regex
@@ -45,7 +45,7 @@ class Pattern {
 	 *		Replacement is composed by a regex and a replacement string.
 	 */
 public:
-	/*
+	/**
 	 * Constructs a pattern from:
 	 *	 	bpf_string(bpf),
 	 *		regex(regex),
@@ -54,23 +54,28 @@ public:
 	 * It compiles the bpf program and regex.
 	 * Raises:
 	 * 		BPF_ERR if cannot compile the filter.
+	 * @param std::string bpf filter string.
+	 * @param std::string regex to match packets against
+	 * @param std::string regex to replace content
+	 * @param std::string replacement string
 	 */
 	Pattern(std::string,std::string,std::string,std::string );
-	/*
+	/**
 	 * Constructs a pattern from ptree (directly from config file).
 	 * It compiles the bpf program and regex.
 	 * Raises:
 	 * 		BPF_ERR if cannot compile the filter.
+	 * @param boost::property_tree::ptree to create the object from.
 	 */
 	Pattern(boost::property_tree::ptree);
-	/*
+	/**
 	 * Checks if the packet matches the given BPF program and regex.
-	 *
+	 * @param Crafter::Packet * to be checked for matching this pattern.
 	 */
 	bool check(Crafter::Packet *);
 	//bool check(unsigned char *);
 	virtual ~Pattern();
-	/*
+	/**
 	 * Writes printable parts of itself to a string.
 	 */
 	std::string print(){
@@ -81,12 +86,15 @@ public:
 		ss << regex.str();
 		return ss.str();
 	}
-	/*
+	/**
 	 * Apply replacement regex over the given layer.
+	 * @param Crafter::Layer * over what the replacement will be applied
+	 * @return int32_t meaning the bytes balance: >0 if added data <0
+	 * if replaced data is smaller than the provided one
 	 */
 	int32_t applyReplacement(Crafter::Layer *);
 private:
-	/*
+	/**
 	 * Compiles the BPF program.
 	 */
 	void init_pcap_bpf();

@@ -35,23 +35,23 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 class Flow {
-	/*
+	/**
 	 * Class that representing a communication channel.
 	 */
 public:
-	/*
-	 * FixME: this should not be here.
+	/**
+	 * FixME: this should not be here. Maybe... It should not know about sibling classes ??
 	 * This is a factory method that creates both flow pairs
 	 * for two generated keys.
 	 */
 	static std::pair<Flow*,Flow*>* makeFlowPair(uint8_t ,std::string,std::string);
-	/*
-	 * FixME: this should not be here.
+	/**
+	 * FixME: this should not be here.Maybe... It should not know about sibling classes ??
 	 * This is a factory method that creates a flow a generated key.
 	 */
 	static Flow* makeFlow(uint8_t ,std::string);
 	virtual ~Flow();
-	/*
+	/**
 	 * Interface to be implemented by sibling classes.
 	 */
 	virtual bool handlePacket(Crafter::Packet*)=0;
@@ -63,6 +63,10 @@ public:
 	}
 
 protected:
+	/**
+	 * Creates a flow with the given key
+	 * @param std::string key.
+	 */
 	Flow(std::string key);
 	std::string key;
 	Flow* brother;

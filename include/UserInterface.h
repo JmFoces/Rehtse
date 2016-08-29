@@ -45,37 +45,38 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <pattern/Scanner.h>
 
 class UserInterface {
-	/*
+	/**
 	 * Class designed to interact with user.
 	 */
 public:
 	static const char OP_CODE_SHOW='s';
 	static const char OP_CODE_QUIT='q';
-	/*
+	/**
 	 * UserInterface()
 	 * 	Not much to say, initializes logger.
 	 * 	In the future it will configure filename instead of using hardcoded config.json.
 	 */
 	UserInterface();
 	virtual ~UserInterface();
-	/*
+	/**
 	 * run()
 	 * 	Parses config.json. Instantiates Scanner and add as patterns as defined in the file.
 	 */
 	void run();
-	/*
+	/**
 	 * start()
 	 * 	Initializes Crafter.
 	 * 	In the future any necessary previous operations will be performed here.
 	 */
 	void start();
-	/*
+	/**
 	 * quit()
 	 * 	Releases all and exits
 	 */
 	void quit();
-	/*
+	/**
 	 * Initializes logging without file, just to STDOUT.
+	 * @param boost::log::trivial::severity_level
 	 */
 	void init_logging(boost::log::trivial::severity_level );
 

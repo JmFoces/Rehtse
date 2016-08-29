@@ -28,7 +28,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <cstddef>
 #include <pattern/Pattern.h>
 class Scanner {
-	/*
+	/**
 	 * Class to perform operations with a set of patterns.
  	 *	  Singleton.
 	 * It's thought to be a manager for this set of patterns allowing to
@@ -38,21 +38,25 @@ class Scanner {
 	 * in the set.
 	 */
 public:
-	/*
+	/**
 	 * Singleton stuff.
+	 * @return the unique instance of this class.
 	 */
 	static Scanner* instance();
-	/*
+	/**
 	 * Releases all patterns in the list, and clean the list.
 	 */
 	virtual ~Scanner();
-	/*
+	/**
 	 * Adds a pattern at the end of the list.
+	 * @param Pattern* to check packets against.
 	 */
 	void add_pattern(Pattern*);
-	/*
+	/**
 	 * Check if packet matches with any of the patterns contained in the list.
 	 * If any patterns matches it stops searching and returns this pattern.
+	 * The patterns are evaluated considering insertion order.
+	 * @param Crafter::Packet* to be checked. It modifies if packet matches any pattern.
 	 */
 	Pattern* check(Crafter::Packet *);
 private:

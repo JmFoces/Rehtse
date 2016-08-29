@@ -1,15 +1,47 @@
 {	
-	"debuglevel":0,
+	"debuglevel":2,
 	"patterns":[
 		{
 			"match":{
-				"bpf":"tcp port 8000",
-				"regex":".*\\x17\\x03\\x03.*"
+				"bpf":"tcp port 445",
+				"regex":".*\\x35\\x82\\x08\\x60.*"
 			},
 			"replacement":{
-				"regex":"\\x17\\x03\\x03.{2}",
-				"replacement":"$0\\x41"
+				"regex":"\\x35\\x82\\x08\\x60",
+				"replacement":"\\x05\\x82\\x08\\x60"
 			}
-		}
+		},
+		{
+                        "match":{
+                                "bpf":"tcp port 445",
+                                "regex":".*\\x15\\x82\\x08\\x60.*"
+                        },
+                        "replacement":{
+                                "regex":"\\x15\\x82\\x08\\x60",
+                                "replacement":"\\x05\\x82\\x08\\x60"
+                        }
+                },
+		{
+                        "match":{
+                                "bpf":"tcp port 445",
+                                "regex":".*T\\x00E\\x00S\\x00T\\x001.*"
+                        },
+                        "replacement":{
+                                "regex":"T\\x00E\\x00S\\x00T\\x001",
+                                "replacement":"T\\x00E\\x00S\\x00T\\x005"
+                        }
+                },
+		{
+                        "match":{
+                                "bpf":"tcp",
+                                "regex":".*hola.*"
+                        },
+                        "replacement":{
+                                "regex":"hola",
+                                "replacement":"adios"
+                        }
+                }
+
+
 	] 
 }

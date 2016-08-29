@@ -33,47 +33,45 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <misc.h>
 
 class FlowTracker {
-	/*
+	/**
 	 * Class that manages flow creation and access each time
 	 * a packet traverses this program.
 	 */
 public:
 	friend class Flow;
-	/*
+	/**
 	 * Singleton stuff
+	 * @return the unique instance of this class.
 	 */
 	static FlowTracker* instance();
-	/*
+	/**
 	 * FixME: I'm not releasing memory.
 	 */
 	virtual ~FlowTracker();
-	/*
+	/**
 	 * Defines the execution flow for each packet:
 	 *	 1º Create access key.
 	 *	 2º getFlow
 	 *	 3º flow->handlePacket...
-	 * returns:
-	 * 		true if packet was modified at any step.
-	 * 		false if not.
+	 * @return bool. true if packet was modified at any step.
 	 */
 	bool handlePacket(Crafter::Packet *);
-	/*
+	/**
 	 * Writes the radix tree to the console.
 	 */
 	void traverse();
-	/*
+	/**
 	 * Look inside the radix for the first key.
 	 * 		If finds it returns the given Flow.
 	 * 		Else creates both flow and its brother and links them.
-	 * Returns:
-	 *	 	Flow*
+	 * @return 	Flow* contained in the radix
 	 */
 	Flow* getFlow(std::string, std::string);
-	/*
+	/**
 	 * Creates a pair of strings to be used as keys to access the radix
 	 * looking for a Flow(first) or its brother(second)
-	 * Returns
-	 * 	std::pair<std::string,std::string>
+	 * @param Crafter::IP * ip layer to build the flow key from.
+	 * @returns std::pair<std::string,std::string>
 	 */
 	std::pair<std::string,std::string> buildFlowKey(Crafter::IP* );
 private:
