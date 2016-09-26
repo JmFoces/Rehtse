@@ -45,6 +45,7 @@ const std::string CONF_KEY_MODIFY="modify";
 const std::string CONF_KEY_REPLACEMENT="replacement";
 const std::string CONF_KEY_REGEX="regex";
 const std::string CONF_KEY_BPF="bpf";
+static const uint16_t JUMBO_MTU = 9000;
 typedef boost::asio::generic::raw_protocol raw_protocol_t;
 typedef boost::asio::generic::basic_endpoint<raw_protocol_t> raw_endpoint_t;
 

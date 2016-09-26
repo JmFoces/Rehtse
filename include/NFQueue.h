@@ -12,8 +12,6 @@
 #include <iomanip>
 #include <time.h>
 #include <cstdlib>
-
-
 #include <netinet/in.h>
 #include <linux/if_ether.h>
 #include <boost/log/core.hpp>

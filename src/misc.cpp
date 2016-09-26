@@ -30,6 +30,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <boost/format.hpp>
 #include <boost/regex.hpp>
 
+
 std::string hexa_print(const unsigned char* array, int len){
 	std::string result;
 	std::stringstream stream;
