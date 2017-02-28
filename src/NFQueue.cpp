@@ -25,6 +25,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "NFQueue.h"
 
+
 NFQueue::NFQueue(boost::asio::io_service* ioservice):
 	netfilterqueue_stream(*ioservice)
 {
@@ -71,7 +72,7 @@ void NFQueue::async_process_netfilterqueue_packet( )
 
 
 	boost::asio::async_read(netfilterqueue_stream,
-			boost::asio::mutable_buffers_1(buf,ETHERMTU),
+			boost::asio::mutable_buffers_1(buf,JUMBO_MTU),
 			boost::asio::transfer_at_least(1),
 			[&](const boost::system::error_code &error, std::size_t bytes_read)
 			{

@@ -41,24 +41,22 @@ uint32_t TCPFlow::updateAckNumber(uint32_t current_ack){
 	return (current_ack - balance);
 }
 bool TCPFlow::handlePacket(Crafter::Packet* packet){
-	BOOST_LOG_TRIVIAL(trace) << "TCPFlow " << hexa_print(key.c_str(),key.size()) << " handling packet ";
+	BOOST_LOG_TRIVIAL(info) << "TCPFlow " << " handling packet ";
+	BOOST_LOG_TRIVIAL(debug) << "TCPFlow " << hexa_print(key.c_str(),key.size()) ;
 	Crafter::TCP *transport_layer = (Crafter::TCP*)packet->operator [](1); /// TCP Will be placed always inside IP.
 	int64_t balance_cache = 0;
 	if (transport_layer->GetPSH()){
-		BOOST_LOG_TRIVIAL(trace) << "Packet IS PUSH";
+		BOOST_LOG_TRIVIAL(trace) << "TCPFlow " << "Packet is PSH";
 		Scanner *scanner = Scanner::instance();
 		Pattern *pattern = scanner->check(packet);
 		if (pattern){
-			BOOST_LOG_TRIVIAL(trace) << "Packet matched filter " << pattern->print();
-			// Apply modifications here!
 			balance_cache += pattern->applyReplacement(packet->operator [](packet->GetLayerCount()-1));
 			modified=true;
-			BOOST_LOG_TRIVIAL(trace) << "Packet Updated " << balance;
 		}else{
-			BOOST_LOG_TRIVIAL(trace) << "No match";
+			BOOST_LOG_TRIVIAL(trace) << "TCPFlow " << "No match";
 		}
 	}else{
-		BOOST_LOG_TRIVIAL(trace) << "Packet IS NOT PUSH";
+		BOOST_LOG_TRIVIAL(trace) << "TCPFlow " << "Packet IS NOT PSH";
 	}
 
 	if (modified || ((TCPFlow*) brother)->modified){
@@ -67,28 +65,29 @@ bool TCPFlow::handlePacket(Crafter::Packet* packet){
 				<< transport_layer->GetSrcPort() << "->"
 				<< transport_layer->GetDstPort();
 		uint32_t current_seq = transport_layer->GetSeqNumber();
-		BOOST_LOG_TRIVIAL(debug) << "Current SEQ " << current_seq;
+		BOOST_LOG_TRIVIAL(trace) << "Current SEQ " << current_seq;
 		transport_layer->SetSeqNumber(updateSeqNumber(current_seq));
-		BOOST_LOG_TRIVIAL(debug) << "MOD SEQ " << transport_layer->GetSeqNumber();
+		BOOST_LOG_TRIVIAL(trace) << "MOD SEQ " << transport_layer->GetSeqNumber();
 		uint32_t current_ack = transport_layer->GetAckNumber();
-		BOOST_LOG_TRIVIAL(debug) << "Current ACK " << current_ack;
+		BOOST_LOG_TRIVIAL(trace) << "Current ACK " << current_ack;
 		transport_layer->SetAckNumber(
 			((TCPFlow*)brother)->updateAckNumber(
 				current_ack
 			)
 		);
-		BOOST_LOG_TRIVIAL(debug) << "MOD ACK " << transport_layer->GetAckNumber();
+		BOOST_LOG_TRIVIAL(trace) << "MOD ACK " << transport_layer->GetAckNumber();
 
 		balance+=balance_cache;
+		BOOST_LOG_TRIVIAL(info) << "TCPFlow " << "Updated Packet Content ";
 		return true;
 	}
 	else{
-		BOOST_LOG_TRIVIAL(trace) << "Touched anything";
+		BOOST_LOG_TRIVIAL(info) << "Touched anything";
 		return false;
 	}
 }
 void TCPFlow::updateKey(std::string &key_s,std::string &key_d, Crafter::IP* packet){
-	BOOST_LOG_TRIVIAL(trace) << "Updating with TCP Key";
+	BOOST_LOG_TRIVIAL(debug) << "Updating with TCP Key";
 	Crafter::TCP *tcp_layer = (Crafter::TCP*) packet->GetTopLayer();
 	uint16_t dport;
 	dport = tcp_layer->GetDstPort();

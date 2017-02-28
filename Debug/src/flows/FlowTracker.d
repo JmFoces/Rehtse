@@ -1,31 +1,26 @@
 src/flows/FlowTracker.o: ../src/flows/FlowTracker.cpp \
- /home/xshell/workspace-neon/RehtSe/include/flows/FlowTracker.h \
- /home/xshell/workspace-neon/RehtSe/include/radix_tree.hpp \
- /home/xshell/workspace-neon/RehtSe/include/radix_tree_it.hpp \
- /home/xshell/workspace-neon/RehtSe/include/radix_tree_node.hpp \
- /home/xshell/workspace-neon/RehtSe/include/flows/Flow.h \
- /home/xshell/workspace-neon/RehtSe/include/misc.h \
- /home/xshell/workspace-neon/RehtSe/include/flows/TCPFlow.h \
- /home/xshell/workspace-neon/RehtSe/include/pattern/Scanner.h \
- /home/xshell/workspace-neon/RehtSe/include/pattern/Pattern.h \
- /home/xshell/workspace-neon/RehtSe/include/err.h
+ ../include/flows/FlowTracker.h ../include/radix_tree.hpp \
+ ../include/radix_tree_it.hpp ../include/radix_tree_node.hpp \
+ ../include/flows/Flow.h ../include/misc.h ../include/flows/TCPFlow.h \
+ ../include/pattern/Scanner.h ../include/pattern/Pattern.h \
+ ../include/err.h
 
-/home/xshell/workspace-neon/RehtSe/include/flows/FlowTracker.h:
+../include/flows/FlowTracker.h:
 
-/home/xshell/workspace-neon/RehtSe/include/radix_tree.hpp:
+../include/radix_tree.hpp:
 
-/home/xshell/workspace-neon/RehtSe/include/radix_tree_it.hpp:
+../include/radix_tree_it.hpp:
 
-/home/xshell/workspace-neon/RehtSe/include/radix_tree_node.hpp:
+../include/radix_tree_node.hpp:
 
-/home/xshell/workspace-neon/RehtSe/include/flows/Flow.h:
+../include/flows/Flow.h:
 
-/home/xshell/workspace-neon/RehtSe/include/misc.h:
+../include/misc.h:
 
-/home/xshell/workspace-neon/RehtSe/include/flows/TCPFlow.h:
+../include/flows/TCPFlow.h:
 
-/home/xshell/workspace-neon/RehtSe/include/pattern/Scanner.h:
+../include/pattern/Scanner.h:
 
-/home/xshell/workspace-neon/RehtSe/include/pattern/Pattern.h:
+../include/pattern/Pattern.h:
 
-/home/xshell/workspace-neon/RehtSe/include/err.h:
+../include/err.h:

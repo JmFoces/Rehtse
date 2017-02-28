@@ -1,14 +1,14 @@
 {	
-	"debuglevel":1,
+	"debuglevel":0,
 	"patterns":[
 		{
 			"match":{
-				"bpf":"tcp",
-				"regex":".*hola.*"
+				"bpf":"tcp port 8000",
+				"regex":".*\\x17\\x03\\x03.*"
 			},
 			"replacement":{
-				"regex":".*hola\n.*",
-				"replacement":"adios\n"
+				"regex":"(\\x17\\x03\\x03.{2})(.{1})",
+				"replacement":"$1\\x41"
 			}
 		}
 	]

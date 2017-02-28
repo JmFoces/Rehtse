@@ -60,14 +60,14 @@ Pattern::~Pattern() {
 
 
 bool Pattern::check(Crafter::Packet *packet){
-	BOOST_LOG_TRIVIAL(trace) << "Pattern checking packet";
+	BOOST_LOG_TRIVIAL(debug) << "Pattern" << print() << "checking packet..." ;
 	bool ret_value = false;
 	size_t size = packet->GetSize();
 	uint8_t* raw_packet= (uint8_t*) malloc(
 		size
 	);
 	size = packet->GetData(raw_packet);
-	BOOST_LOG_TRIVIAL(debug) << "PACKET DATA" <<  hexa_print((unsigned char* ) raw_packet, size);
+	BOOST_LOG_TRIVIAL(trace) << "PACKET DATA" <<  hexa_print((unsigned char* ) raw_packet, size);
 	/*uint32_t bpf_exec_result = bpf_filter( //if 0 then  matches
 		bpf_compiled->bf_insns,
 		(unsigned char*) raw_packet,
@@ -83,18 +83,19 @@ bool Pattern::check(Crafter::Packet *packet){
 		raw_packet
 	);
 
-	BOOST_LOG_TRIVIAL(trace) << "BPF program Exec OK " << bpf_exec_result;
+	BOOST_LOG_TRIVIAL(trace) << "BPF Program exit code: " << bpf_exec_result;
 	std::string raw_pack_str((const char*)raw_packet,size);
 	if(bpf_exec_result != 0){
 		//FIXME
-		BOOST_LOG_TRIVIAL(trace) << "BPF Match "<< bpf_string;
+		BOOST_LOG_TRIVIAL(debug) << "BPF Match "<< bpf_string;
 		ret_value = match_regex(raw_pack_str,regex);
 	}
+	if(ret_value)BOOST_LOG_TRIVIAL(info) << "Pattern" << print() << "Matched!";
 	return ret_value;
 }
 
 int32_t Pattern::applyReplacement(Crafter::Layer *layer){
-
+	BOOST_LOG_TRIVIAL(debug) << "Pattern" << print() << "Updating packet contents..." ;
 	std::string payload = layer->GetStringPayload();
 	std::ostringstream t(std::ios::out | std::ios::binary);
 	std::ostream_iterator<char, char> oi(t);
@@ -106,8 +107,10 @@ int32_t Pattern::applyReplacement(Crafter::Layer *layer){
 		raw_replacement,
 		boost::match_default | boost::format_first_only
 	);
+
 	layer->SetPayload((unsigned char*)payload_mod.c_str(),payload_mod.size());
 	BOOST_LOG_TRIVIAL(trace) << "Payload mod PAYLOAD " << hexa_print(layer->GetStringPayload().c_str(),layer->GetStringPayload().size());
 
+	if (payload != payload_mod) BOOST_LOG_TRIVIAL(info) << "Pattern" << print() << "Updated packet content" ;
 	return (payload_mod.size() - payload.size());
 }

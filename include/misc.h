@@ -45,22 +45,29 @@ const std::string CONF_KEY_MODIFY="modify";
 const std::string CONF_KEY_REPLACEMENT="replacement";
 const std::string CONF_KEY_REGEX="regex";
 const std::string CONF_KEY_BPF="bpf";
+static const uint16_t JUMBO_MTU = 9000;
 typedef boost::asio::generic::raw_protocol raw_protocol_t;
 typedef boost::asio::generic::basic_endpoint<raw_protocol_t> raw_endpoint_t;
 
-
+/**
+ * Formats the array to hexadecimal.
+ * @param const unsigned char*
+ * @param int length
+ * @returns std::string containing hexadecimal representation of the array.
+ */
 std::string hexa_print(const unsigned char* array, int lenght);
+/**
+ * Formats the array to hexadecimal.
+ * @param const  char*
+ * @param int length
+ * @returns std::string containing hexadecimal representation of the array.
+ */
 std::string hexa_print(const char* array, int lenght);
-uint64_t char_to_mac(unsigned char *data);
-uint32_t char_to_ip(unsigned char *data);
-ether_addr std_char_to_mac(unsigned char *data);
-uint32_t int8_ptr_to_uint32(uint8_t *data);
-uint32_t int8_ptr_to_uint32_shift(uint8_t *data);
-void char_shift(unsigned char* array,uint8_t len,uint8_t* result);
-boost::format format_mac_addr(uint8_t* mac_addr);
-boost::format format_ip_addr(uint8_t* ip_addr);
-boost::format format_ip_addr(char* ip_addr);
-bool compare_arr(uint8_t* first,uint8_t *second,size_t size);
-void call_ios(boost::asio::io_service* ios);
+/**
+ * Checks the given regex over the target and returns the result.
+ * @param std::string target content to match against regex
+ * @param boost::regex regex regex to apply
+ * @returns true if matches.
+ */
 bool match_regex(std::string target, boost::regex regex);
 #endif

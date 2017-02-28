@@ -1,19 +1,16 @@
 src/flows/GenericFlow.o: ../src/flows/GenericFlow.cpp \
- /home/xshell/workspace-neon/RehtSe/include/flows/GenericFlow.h \
- /home/xshell/workspace-neon/RehtSe/include/flows/Flow.h \
- /home/xshell/workspace-neon/RehtSe/include/misc.h \
- /home/xshell/workspace-neon/RehtSe/include/pattern/Scanner.h \
- /home/xshell/workspace-neon/RehtSe/include/pattern/Pattern.h \
- /home/xshell/workspace-neon/RehtSe/include/err.h
+ ../include/flows/GenericFlow.h ../include/flows/Flow.h ../include/misc.h \
+ ../include/pattern/Scanner.h ../include/pattern/Pattern.h \
+ ../include/err.h
 
-/home/xshell/workspace-neon/RehtSe/include/flows/GenericFlow.h:
+../include/flows/GenericFlow.h:
 
-/home/xshell/workspace-neon/RehtSe/include/flows/Flow.h:
+../include/flows/Flow.h:
 
-/home/xshell/workspace-neon/RehtSe/include/misc.h:
+../include/misc.h:
 
-/home/xshell/workspace-neon/RehtSe/include/pattern/Scanner.h:
+../include/pattern/Scanner.h:
 
-/home/xshell/workspace-neon/RehtSe/include/pattern/Pattern.h:
+../include/pattern/Pattern.h:
 
-/home/xshell/workspace-neon/RehtSe/include/err.h:
+../include/err.h:

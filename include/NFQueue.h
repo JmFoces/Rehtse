@@ -12,8 +12,6 @@
 #include <iomanip>
 #include <time.h>
 #include <cstdlib>
-
-
 #include <netinet/in.h>
 #include <linux/if_ether.h>
 #include <boost/log/core.hpp>
@@ -39,10 +37,24 @@ struct nfq_data {
 static int qpacket( struct nfq_q_handle *, struct nfgenmsg *, struct nfq_data *, void * );
 
 class NFQueue {
+	/**
+	 * Abstracts interaction with netfilter queues.
+	 */
 public:
 	boost::asio::io_service *ios;
+	/**
+	 * NFQueue()
+	 * Perform necessary operations to register the queue.
+	 * 	@param boost::asio::io_service*
+	 */
 	NFQueue(boost::asio::io_service*);
+	/**
+	 * Destroys the queue.
+	 */
 	virtual ~NFQueue();
+	/**
+	 * Dispatch the packet to the FlowTracker.
+	 */
 	void async_process_netfilterqueue_packet();
 private:
 	struct nfq_handle *nfqHandle = NULL;
