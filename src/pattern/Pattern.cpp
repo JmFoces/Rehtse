@@ -68,12 +68,7 @@ bool Pattern::check(Crafter::Packet *packet){
 	);
 	size = packet->GetData(raw_packet);
 	BOOST_LOG_TRIVIAL(trace) << "PACKET DATA" <<  hexa_print((unsigned char* ) raw_packet, size);
-	/*uint32_t bpf_exec_result = bpf_filter( //if 0 then  matches
-		bpf_compiled->bf_insns,
-		(unsigned char*) raw_packet,
-		size,
-		size
-	);*/
+	
 	pcap_pkthdr pkt_hdr;
 	pkt_hdr.caplen = size;
 	pkt_hdr.len = size;
