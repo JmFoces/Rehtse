@@ -34,7 +34,6 @@ Pattern::Pattern(std::string bpf,std::string regex,std::string replacement_regex
 	init_pcap_bpf();
 }
 void Pattern::init_pcap_bpf(){
-	//pcap = pcap_open_dead(DLT_EN10MB,65535);//Allocs mem.
 	pcap = pcap_open_dead(DLT_RAW,65535);//Allocs mem.
 	bpf_compiled = (struct bpf_program* ) malloc(sizeof(bpf_program));
 	if (pcap_compile(pcap,bpf_compiled,bpf_string.c_str(),0,PCAP_NETMASK_UNKNOWN) < 0 ){
@@ -96,7 +95,6 @@ int32_t Pattern::applyReplacement(Crafter::Layer *layer){
 	std::ostringstream t(std::ios::out | std::ios::binary);
 	std::ostream_iterator<char, char> oi(t);
 	BOOST_LOG_TRIVIAL(trace) << "BASE PAYLOAD " << hexa_print(payload.c_str(),payload.size());
-	//boost::regex_replace(oi, payload.begin(),payload.end(),regex, format, boost::match_default | boost::format_all);
 	std::string payload_mod =  boost::regex_replace(
 		payload,
 		replacement_regex,
