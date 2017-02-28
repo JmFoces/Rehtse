@@ -14,7 +14,7 @@ modification, are permitted provided that the following conditions are met:
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL ESTEBAN PELLEGRINO BE LIABLE FOR ANY
+DISCLAIMED. IN NO EVENT SHALL JOSÉ MARÍA FOCES VIVANCOS BE LIABLE FOR ANY
 DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
@@ -68,12 +68,7 @@ bool Pattern::check(Crafter::Packet *packet){
 	);
 	size = packet->GetData(raw_packet);
 	BOOST_LOG_TRIVIAL(trace) << "PACKET DATA" <<  hexa_print((unsigned char* ) raw_packet, size);
-	/*uint32_t bpf_exec_result = bpf_filter( //if 0 then  matches
-		bpf_compiled->bf_insns,
-		(unsigned char*) raw_packet,
-		size,
-		size
-	);*/
+	
 	pcap_pkthdr pkt_hdr;
 	pkt_hdr.caplen = size;
 	pkt_hdr.len = size;
