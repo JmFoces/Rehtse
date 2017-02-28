@@ -32,7 +32,7 @@ GenericFlow::~GenericFlow() {
 }
 
 bool GenericFlow::handlePacket(Crafter::Packet *packet){
-	BOOST_LOG_TRIVIAL(info) << "TCPFlow " << " handling packet ";
+	BOOST_LOG_TRIVIAL(info) << "GenericFlow " << " handling packet ";
 	BOOST_LOG_TRIVIAL(debug) << "GenericFlow " << hexa_print(key.c_str(),key.size());
 	int32_t balance_cache = 0;
 	Scanner *scanner = Scanner::instance();

@@ -91,6 +91,7 @@ bool Pattern::check(Crafter::Packet *packet){
 		ret_value = match_regex(raw_pack_str,regex);
 	}
 	if(ret_value)BOOST_LOG_TRIVIAL(info) << "Pattern" << print() << "Matched!";
+	free(raw_packet);
 	return ret_value;
 }
 
