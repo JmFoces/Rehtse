@@ -27,7 +27,8 @@ PACKET DATA 45000048147a000036119d6b08080808c0a802080035d86c0034d9177a4981800001
 PACKET MOD 45000048147a000036119d6b08080808c0a802080035d86c003475317a498180000100010000000006676f6f676c6503636f6d0000010001c00c000100010000004c00040`8080808`
 ...
 Results 
-###nslookup google.com \#Without RehtSe running
+###Without RehtSe running
+nslookup google.com
 Server:     8.8.8.8
 Address:    8.8.8.8#53
 
@@ -35,7 +36,8 @@ Non-authoritative answer:
 Name:   google.com
 Address: 216.58.211.238
 
-###nslookup google.com \#With RehtSe running
+### #With RehtSe running
+nslookup google.com
 Server:     8.8.8.8
 Address:    8.8.8.8#53
 
@@ -68,8 +70,8 @@ Address: 8.8.8.8
 ./run.sh change_http_get_uri.json
 ```
 
-This is the output from RehtSe on trace level:
-Got key_S c0a8020889e2222e0678c95000
+###This is the output from RehtSe on trace level:
+```Got key_S c0a8020889e2222e0678c95000
 Got key_D 89e2222ec0a8020806500078c9
 Flow Tracker access with key c0a8020889e2222e0678c95000
 Flow Tracked already 
@@ -93,14 +95,15 @@ MOD SEQ 1000680743
 Current ACK 2644857090
 MOD ACK 2644857090
 TCPFlow Updated Packet Content 
+```
 
 ##From this moment RehtSe will take care of re-adjusting SEQ and ACK numbers on each packet belonging to this connection until it closes:
-Keeping consistency of TCP Flows 80->51576
+```Keeping consistency of TCP Flows 80->51576
 Current SEQ 2644857090
 MOD SEQ 2644857090
 Current ACK 1000680839
 MOD ACK 1000680832
-TCPFlow Updated Packet Content 
+TCPFlow Updated Packet Content ```
 ##And so on ...
 
 

@@ -22,4 +22,4 @@ To use it:
     
 The project works now on Eclipse Neon. 
   
-Take a look at examples folder. 
+Take a look at https://github.com/JmFoces/Rehtse/blob/master/examples/examples.md
