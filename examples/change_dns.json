@@ -1,0 +1,15 @@
+{	
+	"debuglevel":0,
+	"patterns":[
+		{
+			"match":{
+				"bpf":"udp src port 53",
+				"regex":".{2}\\x81\\x80.*google\\x03com.*"
+			},
+			"replacement":{
+				"regex":"(.{40})(.{4})",
+				"replacement":"$1\\x08\\x08\\x08\\x08"
+			}
+		}
+	]
+}

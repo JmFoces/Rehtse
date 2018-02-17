@@ -66,7 +66,7 @@ bool Pattern::check(Crafter::Packet *packet){
 		size
 	);
 	size = packet->GetData(raw_packet);
-	BOOST_LOG_TRIVIAL(trace) << "PACKET DATA" <<  hexa_print((unsigned char* ) raw_packet, size);
+	BOOST_LOG_TRIVIAL(trace) << "PACKET DATA " <<  hexa_print((unsigned char* ) raw_packet, size);
 	
 	pcap_pkthdr pkt_hdr;
 	pkt_hdr.caplen = size;

@@ -124,7 +124,7 @@ std::pair<std::string,std::string> FlowTracker::buildFlowKey(Crafter::IP* packet
 			break;
 		*/
 		default:
-			BOOST_LOG_TRIVIAL(info) << "unknown proto";
+			BOOST_LOG_TRIVIAL(info) << "Datagram protocol";
 			break;
 	}
 	BOOST_LOG_TRIVIAL(trace) << "Got key_S " << hexa_print(key_s.c_str(),key_s.size());

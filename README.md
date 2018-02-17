@@ -22,3 +22,4 @@ To use it:
     
 The project works now on Eclipse Neon. 
   
+Take a look at examples folder. 

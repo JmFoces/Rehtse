@@ -1,0 +1,15 @@
+{	
+	"debuglevel":0,
+	"patterns":[
+		{
+			"match":{
+				"bpf":"tcp dst port 80",
+				"regex":"GET /debian/ HTTP/1.1.*"
+			},
+			"replacement":{
+				"regex":"(GET )(/debian/)( HTTP/1.1)",
+				"replacement":"$1/ubuntu-xenial/$3"
+			}
+		}
+	]
+}

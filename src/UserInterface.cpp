@@ -57,6 +57,7 @@ void UserInterface::run(){
 	scanner = Scanner::instance();
 	if (config.fail() != 0){
 		std::cerr << "./config.json not found! Bye!" << std::endl;
+		exit (EXIT_FAILURE);
 	}else{
 		boost::property_tree::ptree pt;
 		boost::property_tree::read_json(config, pt);
