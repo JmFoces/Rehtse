@@ -1,3 +1,27 @@
+*./run.sh Overwrites /etc/nftables.conf to hook all packets and dispatch them to queue 0.*\s\s
+Use it carefully.\s\s
+This is the nftables.conf file:
+```
+#!/usr/sbin/nft -f
+
+flush ruleset
+
+table inet filter {
+    chain input {
+        type filter hook input priority 0;
+        queue num 0 bypass;
+    }
+    chain forward {
+        type filter hook forward priority 0;
+        queue num 0 bypass;
+    }
+    chain output {
+        type filter hook output priority 0;
+        queue num 0 bypass;
+    }
+}
+
+```
 # Change DNS
 ## Just change the result of the address returned by the server by 8.8.8.8.
 ```javascript
@@ -31,7 +55,8 @@ PACKET MOD 45000048147a000036119d6b08080808c0a802080035d86c003475317a49818000010
 ```
 
 ### Results 
-Without Rehtse running
+#### Without Rehtse running
+```bash
 nslookup google.com
 Server:     8.8.8.8
 Address:    8.8.8.8#53
@@ -39,8 +64,10 @@ Address:    8.8.8.8#53
 Non-authoritative answer:
 Name:   google.com
 Address: 216.58.211.238
+```
 
-With Rehtse running
+#### With Rehtse running
+```bash
 nslookup google.com
 Server:     8.8.8.8
 Address:    8.8.8.8#53
@@ -48,7 +75,7 @@ Address:    8.8.8.8#53
 Non-authoritative answer:
 Name:   google.com
 Address: 8.8.8.8
-
+```
 
 
 # Change HTTP path on an HTTP-GET
