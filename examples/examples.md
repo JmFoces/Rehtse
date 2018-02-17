@@ -1,4 +1,4 @@
-*./run.sh Overwrites /etc/nftables.conf to hook all packets and dispatch them to queue 0.*\s\s
+**./run.sh Overwrites /etc/nftables.conf to hook all packets and dispatch them to queue 0.**-break
 Use it carefully.\s\s
 This is the nftables.conf file:
 ```
