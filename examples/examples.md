@@ -118,7 +118,7 @@ Accept: */*
 HTTP/1.1 200 OK
 ```
 With RehtSe running
-curl http://ftp2.de.debian.org/debian/ 
-```<html>...
+```curl http://ftp2.de.debian.org/debian/ 
+<html>...
 <p>The requested URL /ubuntu-xenial/ was not found on this server.</p>
 ...</html>```
