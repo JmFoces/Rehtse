@@ -1,6 +1,6 @@
-**./run.sh Overwrites /etc/nftables.conf to hook all packets and dispatch them to queue 0.**-break
-Use it carefully.\s\s
-This is the nftables.conf file:
+**./run.sh Overwrites /etc/nftables.conf to hook all packets and dispatch them to queue 0.**  
+**Use it carefully.**  
+This is the nftables.conf file:  
 ```
 #!/usr/sbin/nft -f
 
