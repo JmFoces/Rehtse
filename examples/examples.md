@@ -86,11 +86,11 @@ Address: 8.8.8.8
     "patterns":[
         {
             "match":{
-                "bpf":"tcp dst port 80",
-                "regex":"GET /debian/ HTTP/1.1.*"
+                "bpf":"tcp dst port 80", --- Filter packets going to port 80.
+                "regex":"GET /debian/ HTTP/1.1.*" --- Filter packets by regex, for example all of them having having a GET Request for /debian/.
             },
             "replacement":{
-                "regex":"(GET )(/debian/)( HTTP/1.1)",
+                "regex":"(GET )(/debian/)( HTTP/1.1)", --- Replace /debian/ by /ubuntu-xenial/
                 "replacement":"$1/ubuntu-xenial/$3"
             }
         }
