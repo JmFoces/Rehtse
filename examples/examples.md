@@ -13,7 +13,8 @@
             "replacement":"$1\\x08\\x08\\x08\\x08"
         }
     }
-]}```
+]}
+```
 
 ```bash
 ./run.sh change_dns.json
@@ -66,7 +67,8 @@ Address: 8.8.8.8
             }
         }
     ]
-}```
+}
+```
 
 ```bash
 ./run.sh change_http_get_uri.json
