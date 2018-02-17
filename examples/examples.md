@@ -20,14 +20,15 @@
 ```
 
 This is the output from RehtSe on trace level:
-read 152 bytes from netfilter queue :
+```read 152 bytes from netfilter queue :
 ...
 PACKET DATA 45000048147a000036119d6b08080808c0a802080035d86c0034d9177a498180000100010000000006676f6f676c6503636f6d0000010001c00c000100010000004c0004`d83ad3ee`
 
 PACKET MOD 45000048147a000036119d6b08080808c0a802080035d86c003475317a498180000100010000000006676f6f676c6503636f6d0000010001c00c000100010000004c00040`8080808`
 ...
-Results 
-###Without RehtSe running
+```
+####Results 
+Without RehtSe running
 nslookup google.com
 Server:     8.8.8.8
 Address:    8.8.8.8#53
@@ -36,7 +37,7 @@ Non-authoritative answer:
 Name:   google.com
 Address: 216.58.211.238
 
-### #With RehtSe running
+With RehtSe running
 nslookup google.com
 Server:     8.8.8.8
 Address:    8.8.8.8#53
@@ -70,7 +71,7 @@ Address: 8.8.8.8
 ./run.sh change_http_get_uri.json
 ```
 
-###This is the output from RehtSe on trace level:
+##This is the output from RehtSe on trace level:
 ```Got key_S c0a8020889e2222e0678c95000
 Got key_D 89e2222ec0a8020806500078c9
 Flow Tracker access with key c0a8020889e2222e0678c95000
