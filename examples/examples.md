@@ -21,7 +21,8 @@
 ```
 
 ### This is the output from Rehtse on trace level:
-```read 152 bytes from netfilter queue :
+```
+read 152 bytes from netfilter queue :
 ...
 PACKET DATA 45000048147a000036119d6b08080808c0a802080035d86c0034d9177a498180000100010000000006676f6f676c6503636f6d0000010001c00c000100010000004c0004`d83ad3ee`
 
@@ -75,7 +76,8 @@ Address: 8.8.8.8
 ```
 
 ### This is the output from Rehtse on trace level:
-```Got key_S c0a8020889e2222e0678c95000
+```
+Got key_S c0a8020889e2222e0678c95000
 Got key_D 89e2222ec0a8020806500078c9
 Flow Tracker access with key c0a8020889e2222e0678c95000
 Flow Tracked already 
@@ -107,7 +109,8 @@ Current SEQ 2644857090
 MOD SEQ 2644857090
 Current ACK 1000680839
 MOD ACK 1000680832
-TCPFlow Updated Packet Content ```
+TCPFlow Updated Packet Content 
+```
 
 ### Results
 Without Rehtse running
