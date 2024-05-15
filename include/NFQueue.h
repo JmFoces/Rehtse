@@ -66,7 +66,7 @@ private:
 
 	int fd = -1;
 	int res = -1;
- 	char buf[4096] __attribute__ ((aligned));
+ 	char buf[JUMBO_MTU] __attribute__ ((aligned));
 
 };
 
